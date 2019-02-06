@@ -2,7 +2,6 @@
 using UnityEngine.SceneManagement;
 using UnityEngine.Tilemaps;
 using UnityEngine.UI;
-//using Unity.Entities;
 
 public class GameController : MonoBehaviour
 {
@@ -10,6 +9,7 @@ public class GameController : MonoBehaviour
     public Tilemap TilesMap;
     public GameObject Asteroid;
     public int FieldSize;
+    //public Transform[,] AllAsteroids;
 
     private static int TotalPoints = 0;
 
@@ -18,6 +18,7 @@ public class GameController : MonoBehaviour
     private void Awake()
     {
         Time.timeScale = 1;
+        //AllAsteroids = new Transform[FieldSize,FieldSize];
     }
 
     void Start()
@@ -32,7 +33,7 @@ public class GameController : MonoBehaviour
                     objInst.transform.localPosition = TilesMap.GetCellCenterLocal(new Vector3Int(x, y, 0));
                     objInst.transform.localPosition = new Vector3(objInst.transform.localPosition.x + TilesMap.cellSize.x / 2, objInst.transform.localPosition.y + TilesMap.cellSize.y / 2, objInst.transform.localPosition.z);
                     objInst.GetComponent<AsteroidController>().controller = this;
-                    //KURWA++;
+                    //AllAsteroids[x, y] = objInst.transform;
                 }
                 //Debug.LogError(string.Format("LocalPosition: x: {0}, y: {1};/n CellPosition: x: {2}, y: {3}", objInst.transform.localPosition.x, objInst.transform.localPosition.y, TilesMap.GetCellCenterLocal(new Vector3Int(x, y, 0)).x, TilesMap.GetCellCenterLocal(new Vector3Int(x, y, 0)).y));
             }
@@ -52,13 +53,3 @@ public class GameController : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
-
-
-//public class AsteroidSystem : ComponentSystem{
-
-//    protected override void OnUpdate()
-//    {
-
-//    }
-
-//}

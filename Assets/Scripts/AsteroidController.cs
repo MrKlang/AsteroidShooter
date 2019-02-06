@@ -14,7 +14,6 @@ public class AsteroidController : MonoBehaviour
     public float RandomMinNumber, RandomMaxNumber;
     public float Duration;
     public GameController controller;
-    public Collider2D collider;
 
     void Start()
     {
@@ -25,6 +24,7 @@ public class AsteroidController : MonoBehaviour
         zAxisRotationValue = Random.Range(RandomMinNumber, RandomMaxNumber);
 
         InitiateAsteroidMovement();
+        //StartCoroutine(CheckDistance());
     }
 
     private void InitiateAsteroidMovement()
@@ -44,6 +44,22 @@ public class AsteroidController : MonoBehaviour
         }
     }
 
+    //private IEnumerator CheckDistance()
+    //{
+    //    for (int i = 0; i < controller.FieldSize; i++)
+    //    {
+    //        for (int j = 0; j < controller.FieldSize; j++)
+    //        {
+    //            if (controller.AllAsteroids[i,j] != transform && Vector3.Distance(transform.localPosition, controller.AllAsteroids[i, j].localPosition) < 5)
+    //            {
+    //                StartCoroutine(ResetAsteroid(gameObject.GetComponent<Collider2D>(), gameObject.GetComponent<SpriteRenderer>()));
+    //            }
+    //        }
+    //    }
+    //    yield return new WaitForSeconds(10);
+    //    StartCoroutine(CheckDistance());
+    //}
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (!collision.transform.CompareTag("Player"))
@@ -58,7 +74,6 @@ public class AsteroidController : MonoBehaviour
 
     private IEnumerator ResetAsteroid(Collider2D collider, SpriteRenderer spriteRenderer)
     {
-        collider.enabled = false;
         spriteRenderer.enabled = false;
 
         if (AsteroidSequence != null)
@@ -70,7 +85,6 @@ public class AsteroidController : MonoBehaviour
 
         yield return Delay;
 
-        collider.enabled = true;
         spriteRenderer.enabled = true;
         InitiateAsteroidMovement();
     }

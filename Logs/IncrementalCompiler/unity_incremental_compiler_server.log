@@ -1,9 +1,9 @@
- (0,0): [02.05.2019 07:20:58.940 PM] Unity incremental compiler server
- (0,0): [02.05.2019 07:20:59.027 PM] watchdog active on pid: 21756
- (0,0): [02.05.2019 07:21:06.228 PM] Assembly-CSharp.dll: no prior compilation found in cache. Caller PID: 21756
- (0,0): [02.05.2019 07:21:06.242 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.05.2019 07:21:09.414 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.05.2019 07:21:09.815 PM] Assembly-CSharp.dll compilation finished in 3572ms  source files re-parsed: 11 metadata reloaded: 215
- (0,0): [02.05.2019 07:21:09.829 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 21756
- (0,0): [02.05.2019 07:26:01.221 PM] Compiler cache size is now 15,72 MB
- (0,0): [02.05.2019 09:07:03.952 PM] watchdog triggered an exit
+ (0,0): [02.06.2019 01:52:48.757 AM] Unity incremental compiler server
+ (0,0): [02.06.2019 01:52:48.855 AM] watchdog active on pid: 20700
+ (0,0): [02.06.2019 01:52:54.213 AM] Assembly-CSharp.dll: no prior compilation found in cache. Caller PID: 20700
+ (0,0): [02.06.2019 01:52:54.227 AM] Assembly-CSharp.dll compiling...
+ (0,0): [02.06.2019 01:52:56.384 AM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
+ (0,0): [02.06.2019 01:52:56.855 AM] Assembly-CSharp.dll compilation finished in 2628ms  source files re-parsed: 11 metadata reloaded: 215
+ (0,0): [02.06.2019 01:52:56.867 AM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 20700
+ (0,0): [02.06.2019 01:57:51.074 AM] Compiler cache size is now 15,72 MB
+ (0,0): [02.06.2019 02:03:33.629 AM] watchdog triggered an exit
