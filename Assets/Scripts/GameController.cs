@@ -1,19 +1,17 @@
-﻿using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.Tilemaps;
+﻿using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine;
+using System;
 
 public class GameController : MonoBehaviour
 {
     public Text Text;
-    public Tilemap TilesMap;
+    public GameObject GridContainer;
     public GameObject Asteroid;
     public int FieldSize;
-    //public Transform[,] AllAsteroids;
+    public Transform Player;
 
     private static int TotalPoints = 0;
-
-    private int KURWA = 0;
 
     private void Awake()
     {
@@ -27,19 +25,16 @@ public class GameController : MonoBehaviour
         {
             for (int y = 0; y < FieldSize; y++)
             {
-                if (KURWA < 320)
-                {
-                    var objInst = Instantiate(Asteroid, TilesMap.transform);
-                    objInst.transform.localPosition = TilesMap.GetCellCenterLocal(new Vector3Int(x, y, 0));
-                    objInst.transform.localPosition = new Vector3(objInst.transform.localPosition.x + TilesMap.cellSize.x / 2, objInst.transform.localPosition.y + TilesMap.cellSize.y / 2, objInst.transform.localPosition.z);
-                    objInst.GetComponent<AsteroidController>().controller = this;
-                    //AllAsteroids[x, y] = objInst.transform;
-                }
+                var objInst = Instantiate(Asteroid, new Vector3Int((x * 3) - 80 * 3, (y * 3) - 80 * 3, 0), Quaternion.identity, GridContainer.transform);
+                objInst.GetComponent<AsteroidController>().controller = this;
+                //AllAsteroids[x, y] = objInst.transform;
                 //Debug.LogError(string.Format("LocalPosition: x: {0}, y: {1};/n CellPosition: x: {2}, y: {3}", objInst.transform.localPosition.x, objInst.transform.localPosition.y, TilesMap.GetCellCenterLocal(new Vector3Int(x, y, 0)).x, TilesMap.GetCellCenterLocal(new Vector3Int(x, y, 0)).y));
             }
         }
 
         System.GC.Collect();
+
+        Player.localPosition = new Vector3(160 * 3/2 , 160 * 3/2 , 0);
     }
 
     public void AddPoints()

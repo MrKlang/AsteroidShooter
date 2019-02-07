@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     public float RotationSpeed;
     public GameObject Bullet;
     public Camera PlayerCamera;
+    public GameObject Grid;
     public GameObject GameOverCanvas;
 
     private bool IsAlive;
@@ -31,12 +32,14 @@ public class PlayerController : MonoBehaviour
             {
                 transform.Rotate(-transform.forward * RotationSpeed * Time.smoothDeltaTime, Space.World);
                 PlayerCamera.transform.Rotate(transform.forward * RotationSpeed * Time.smoothDeltaTime, Space.World);
+                Grid.transform.Rotate(transform.forward * RotationSpeed * Time.smoothDeltaTime, Space.World);
             }
 
             if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
             {
                 transform.Rotate(transform.forward * RotationSpeed * Time.smoothDeltaTime, Space.World);
                 PlayerCamera.transform.Rotate(-transform.forward * RotationSpeed * Time.smoothDeltaTime, Space.World);
+                Grid.transform.Rotate(-transform.forward * RotationSpeed * Time.smoothDeltaTime, Space.World);
             }
         }
     }

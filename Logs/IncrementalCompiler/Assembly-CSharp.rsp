@@ -328,6 +328,7 @@
 -i:D:/Documents/GitHub/SpaceInvader/SpaceInvader/AsteroidShooter/Assets/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs
 -i:D:/Documents/GitHub/SpaceInvader/SpaceInvader/AsteroidShooter/Assets/Demigiant/DOTween/Modules/DOTweenModuleUtils.cs
 -i:D:/Documents/GitHub/SpaceInvader/SpaceInvader/AsteroidShooter/Assets/Scripts/AsteroidController.cs
+-i:D:/Documents/GitHub/SpaceInvader/SpaceInvader/AsteroidShooter/Assets/Scripts/AsteroidMovementJob.cs
 -i:D:/Documents/GitHub/SpaceInvader/SpaceInvader/AsteroidShooter/Assets/Scripts/BulletController.cs
 -i:D:/Documents/GitHub/SpaceInvader/SpaceInvader/AsteroidShooter/Assets/Scripts/GameController.cs
 -i:D:/Documents/GitHub/SpaceInvader/SpaceInvader/AsteroidShooter/Assets/Scripts/PlayerController.cs
