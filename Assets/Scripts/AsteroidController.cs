@@ -1,21 +1,20 @@
-﻿using DG.Tweening;
+﻿//using DG.Tweening; //For Sequence Only
 using System.Collections;
 using UnityEngine;
 
 public class AsteroidController : MonoBehaviour
 {
-    private float zAxisRotationValue;
-    private Sequence AsteroidSequence;
+    //private Sequence AsteroidSequence;
     private Vector3 StartingPosition;
     private WaitForSeconds Delay = new WaitForSeconds(1f);
     private Transform parent;
     private bool IsRespawning;
 
-    public float RandomMinNumber, RandomMaxNumber;
-    public float Duration;
+    //public float Duration; // Uncomment for sequence usage
+    //public Rigidbody2D rigid; // Uncomment for physics usage in FixedUpdate
+    public Vector2 AsteroidDirection;
+    public float Speed;
     public GameController controller;
-    public Rigidbody2D rigid;
-    public float xAxisMovementValue, yAxisMovementValue;
 
     void Start() // Note to self. Physics make everything waaaay worse. Like 1000ms+ worse... FIND A WAY TO DEAL WITH THEM! Seriously. Without active colliders there was hope. After colliders were switched on... Only despair remained.
     {
@@ -24,26 +23,22 @@ public class AsteroidController : MonoBehaviour
         parent = transform.parent;
         transform.parent = null;
 
-        xAxisMovementValue = Random.Range(RandomMinNumber, RandomMaxNumber);
-        yAxisMovementValue = Random.Range(RandomMinNumber, RandomMaxNumber);
-        zAxisRotationValue = Random.Range(RandomMinNumber, RandomMaxNumber);
-
-        //InitiateAsteroidMovement();
-        //StartCoroutine(CheckDistance());
+        //InitiateAsteroidMovement(); // uncomment to use sequence
+        //StartCoroutine(CheckDistance()); //U*ncomment to use mathematic way to check collision (not recommended)
     }
 
-    //private void InitiateAsteroidMovement()  //<---------------------------- Not a solution. Kinda works. Very laggy 40-65 ms per player loop (without collisions) 
+    //private void InitiateAsteroidMovement()  //<---------------------------- Not a solution. Kinda works. Very laggy 40-65 ms per player loop (without collisions) UNCOMMIT SEQUENCE TU USE (DON'T FORGET ABOUT OnDestroy METHOD)
     //{
     //    AsteroidSequence = DOTween.Sequence();
 
-    //    AsteroidSequence.Append(transform.DOLocalMove(new Vector3(transform.localPosition.x + xAxisMovementValue, transform.localPosition.y + yAxisMovementValue, transform.localPosition.z), Duration).SetEase(Ease.Linear));
+    //    AsteroidSequence.Append(transform.DOLocalMove(new Vector3(transform.localPosition.x + AsteroidDirection.x, transform.localPosition.y + AsteroidDirection.y, transform.localPosition.z), Duration).SetEase(Ease.Linear));
 
     //    AsteroidSequence.SetLoops(-1, LoopType.Incremental);
     //}
 
     //private void FixedUpdate() //<---------------------------- Not a solution. 500+ ms per player loop and almost killed my laptop(without collisions)
     //{
-    //    rigid.MovePosition(rigid.position + new Vector2(transform.localPosition.x + xAxisMovementValue, transform.localPosition.y + yAxisMovementValue) * Time.fixedDeltaTime);
+    //    rigid.MovePosition(rigid.position + new Vector2(transform.localPosition.x + AsteroidDirection.x, transform.localPosition.y + AsteroidDirection.y) * Time.fixedDeltaTime);
     //}
 
     //private void FixedUpdate() //<---------------------------- Not a solution. Whole player loop takes 700 - 900 ms (using rigidbody.MovePosition it takes longer than using DoTween Sequence).
@@ -69,13 +64,13 @@ public class AsteroidController : MonoBehaviour
     //    }
     //}
 
-    private void OnDestroy()
-    {
-        if (AsteroidSequence != null)
-        {
-            AsteroidSequence.Kill();
-        }
-    }
+    //private void OnDestroy()
+    //{
+    //    if (AsteroidSequence != null)
+    //    {
+    //        AsteroidSequence.Kill();
+    //    }
+    //}
 
     //private IEnumerator CheckDistance() //<---------------------------- Not a solution. Killed my laptop...
     //{
@@ -97,7 +92,7 @@ public class AsteroidController : MonoBehaviour
     {
         if (!IsRespawning)
         {
-            transform.Translate(new Vector3(xAxisMovementValue, yAxisMovementValue, 0) * Time.deltaTime / 100, Space.Self);
+            transform.Translate(new Vector3(AsteroidDirection.x, AsteroidDirection.y, 0) * Time.deltaTime * Speed, Space.Self);
         }
     }
 
@@ -120,10 +115,10 @@ public class AsteroidController : MonoBehaviour
         transform.parent = parent;
         IsRespawning = true;
 
-        if (AsteroidSequence != null)
-        {
-            AsteroidSequence.Kill();
-        }
+        //if (AsteroidSequence != null)
+        //{
+        //    AsteroidSequence.Kill();
+        //}
 
         transform.localPosition = StartingPosition;
 

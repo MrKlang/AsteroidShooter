@@ -242,6 +242,10 @@ MonoBehaviour:
     type: 3}
   FieldSize: 160
   Player: {fileID: 49125825}
+  RandomMinNumber: -2
+  RandomMaxNumber: 2
+  RandomSpeedMinNumber: -0.01
+  RandomSpeedMaxNumber: 0.01
 --- !u!1 &772589312
 GameObject:
   m_ObjectHideFlags: 0
