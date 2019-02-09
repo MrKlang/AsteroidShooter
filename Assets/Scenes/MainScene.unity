@@ -244,8 +244,11 @@ MonoBehaviour:
   Player: {fileID: 49125825}
   RandomMinNumber: -2
   RandomMaxNumber: 2
-  RandomSpeedMinNumber: -0.01
-  RandomSpeedMaxNumber: 0.01
+  RandomSpeedMinNumber: 0.01
+  RandomSpeedMaxNumber: 0.05
+  camera: {fileID: 1472005996}
+  SpawnPointsOutsidePlayerFrustrum: []
+  SaveExists: 0
 --- !u!1 &772589312
 GameObject:
   m_ObjectHideFlags: 0
@@ -1003,7 +1006,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 1
+  m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 288
@@ -1183,5 +1186,25 @@ PrefabInstance:
       propertyPath: GameOverCanvas
       value: 
       objectReference: {fileID: 1884080913}
+    - target: {fileID: 4146864104972535328, guid: b0627061ddf98214b9e3e70014faa574,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4146864104972535328, guid: b0627061ddf98214b9e3e70014faa574,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4146864104972535328, guid: b0627061ddf98214b9e3e70014faa574,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4146864105730627727, guid: b0627061ddf98214b9e3e70014faa574,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0627061ddf98214b9e3e70014faa574, type: 3}

@@ -2,6 +2,7 @@
 using UnityEngine.UI;
 using UnityEngine;
 using System.Runtime.Serialization.Formatters.Binary;
+using System.Collections.Generic;
 using System.IO;
 using System;
 
@@ -14,7 +15,14 @@ public class GameController : MonoBehaviour
     public Transform Player;
     public float RandomMinNumber, RandomMaxNumber;
     public float RandomSpeedMinNumber, RandomSpeedMaxNumber;
+    public Camera camera;
+
+    [HideInInspector]
+    public List<Vector3> SpawnPointsOutsidePlayerFrustrum = new List<Vector3>();
+
+    [HideInInspector]
     public bool SaveExists;
+
 
     private static int TotalPoints = 0;
     private AsteroidsData AsteroidsData;
@@ -29,6 +37,14 @@ public class GameController : MonoBehaviour
     {
         TryLoadingAsteroidsDataFromFile();
 
+        var cameraRightUpperCornerPosition = new Vector3(Screen.width, Screen.height, 0);
+
+        var upperRightCornerInWorldSpace = camera.ScreenToWorldPoint(cameraRightUpperCornerPosition);
+        var lowerLeftCornerInWorldSpace = camera.ScreenToWorldPoint(Vector3.zero);
+
+        var localRightUpperCornerPosition = camera.transform.InverseTransformPoint(upperRightCornerInWorldSpace);
+        var localLeftLowerCornerPosition = camera.transform.InverseTransformPoint(lowerLeftCornerInWorldSpace);
+
         for (int x = 0; x < FieldSize; x++)
         {
             for (int y = 0; y < FieldSize; y++)
@@ -37,9 +53,16 @@ public class GameController : MonoBehaviour
                 var asteroidController = objInst.GetComponent<AsteroidController>();
                 asteroidController.controller = this;
 
+                var asteroidLocalPosition = objInst.transform.localPosition;
+
+                if(!(asteroidLocalPosition.x < localRightUpperCornerPosition.x && asteroidLocalPosition.x > localLeftLowerCornerPosition.x && asteroidLocalPosition.y < localRightUpperCornerPosition.y && asteroidLocalPosition.y > localLeftLowerCornerPosition.y))
+                {
+                    SpawnPointsOutsidePlayerFrustrum.Add(asteroidLocalPosition);
+                }
+
                 if (SaveExists)
                 {
-                    asteroidController.AsteroidDirection = AsteroidsData.AsteroidDirection[x,y];
+                    asteroidController.AsteroidDirection = AsteroidsData.AsteroidDirection[x, y];
                     asteroidController.Speed = AsteroidsData.AsteroidSpeed[x, y];
                 }
                 else
