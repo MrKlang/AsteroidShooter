@@ -30,18 +30,28 @@ public class PlayerController : MonoBehaviour
 
             if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
             {
-                transform.Rotate(-transform.forward * RotationSpeed * Time.smoothDeltaTime, Space.World);
-                PlayerCamera.transform.Rotate(transform.forward * RotationSpeed * Time.smoothDeltaTime, Space.World);
-                Grid.transform.Rotate(transform.forward * RotationSpeed * Time.smoothDeltaTime, Space.World);
+                TurnRight();
             }
 
             if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
             {
-                transform.Rotate(transform.forward * RotationSpeed * Time.smoothDeltaTime, Space.World);
-                PlayerCamera.transform.Rotate(-transform.forward * RotationSpeed * Time.smoothDeltaTime, Space.World);
-                Grid.transform.Rotate(-transform.forward * RotationSpeed * Time.smoothDeltaTime, Space.World);
+                TurnLeft();
             }
         }
+    }
+
+    private void TurnRight()
+    {
+        transform.Rotate(-transform.forward * RotationSpeed * Time.smoothDeltaTime, Space.World);
+        PlayerCamera.transform.Rotate(transform.forward * RotationSpeed * Time.smoothDeltaTime, Space.World);
+        Grid.transform.Rotate(transform.forward * RotationSpeed * Time.smoothDeltaTime, Space.World);
+    }
+
+    private void TurnLeft()
+    {
+        transform.Rotate(transform.forward * RotationSpeed * Time.smoothDeltaTime, Space.World);
+        PlayerCamera.transform.Rotate(-transform.forward * RotationSpeed * Time.smoothDeltaTime, Space.World);
+        Grid.transform.Rotate(-transform.forward * RotationSpeed * Time.smoothDeltaTime, Space.World);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

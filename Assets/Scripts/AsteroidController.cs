@@ -22,7 +22,7 @@ public class AsteroidController : MonoBehaviour
     [HideInInspector]
     public GameController controller;
 
-    void Start() // Note to self. Physics make everything waaaay worse. Like 1000ms+ worse... FIND A WAY TO DEAL WITH THEM! Seriously. Without active colliders there was hope. After colliders were switched on... Only despair remained.
+    void Start()
     {
         StartingPosition = transform.localPosition;
 

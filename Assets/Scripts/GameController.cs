@@ -30,7 +30,6 @@ public class GameController : MonoBehaviour
     private void Awake()
     {
         Time.timeScale = 1;
-        //AllAsteroids = new Transform[FieldSize,FieldSize];
     }
 
     void Start()
@@ -73,9 +72,6 @@ public class GameController : MonoBehaviour
                     asteroidController.AsteroidDirection = AsteroidsData.AsteroidDirection[x, y];
                     asteroidController.Speed = AsteroidsData.AsteroidSpeed[x, y];
                 }
-
-                //AllAsteroids[x, y] = objInst.transform;
-                //Debug.LogError(string.Format("LocalPosition: x: {0}, y: {1};/n CellPosition: x: {2}, y: {3}", objInst.transform.localPosition.x, objInst.transform.localPosition.y, TilesMap.GetCellCenterLocal(new Vector3Int(x, y, 0)).x, TilesMap.GetCellCenterLocal(new Vector3Int(x, y, 0)).y));
             }
         }
 
@@ -99,16 +95,19 @@ public class GameController : MonoBehaviour
             }
             else
             {
-                AsteroidsData.AsteroidDirection = new Vector2[FieldSize, FieldSize];
-                AsteroidsData.AsteroidSpeed = new float[FieldSize, FieldSize];
-                SaveExists = false;
+                SetEmptyAsteroidsData();
             }
         }
         else {
-            AsteroidsData.AsteroidDirection = new Vector2[FieldSize, FieldSize];
-            AsteroidsData.AsteroidSpeed = new float[FieldSize, FieldSize];
-            SaveExists = false;
+            SetEmptyAsteroidsData();
         }
+    }
+
+    private void SetEmptyAsteroidsData()
+    {
+        AsteroidsData.AsteroidDirection = new Vector2[FieldSize, FieldSize];
+        AsteroidsData.AsteroidSpeed = new float[FieldSize, FieldSize];
+        SaveExists = false;
     }
 
 
