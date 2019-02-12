@@ -244,11 +244,12 @@ MonoBehaviour:
   Player: {fileID: 49125825}
   RandomMinNumber: -2
   RandomMaxNumber: 2
-  RandomSpeedMinNumber: 0.01
-  RandomSpeedMaxNumber: 0.05
+  RandomSpeedMinNumber: 1
+  RandomSpeedMaxNumber: 5
   camera: {fileID: 1472005996}
   SpawnPointsOutsidePlayerFrustrum: []
   SaveExists: 0
+  AllAsteroids: []
 --- !u!1 &772589312
 GameObject:
   m_ObjectHideFlags: 0
@@ -1091,6 +1092,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4146864105730627725, guid: b0627061ddf98214b9e3e70014faa574,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4146864105730627724, guid: b0627061ddf98214b9e3e70014faa574,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1165,6 +1171,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_CullingMask.m_Bits
       value: 288
+      objectReference: {fileID: 0}
+    - target: {fileID: 4146864104972535329, guid: b0627061ddf98214b9e3e70014faa574,
+        type: 3}
+      propertyPath: m_OcclusionCulling
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4146864105730627726, guid: b0627061ddf98214b9e3e70014faa574,
         type: 3}

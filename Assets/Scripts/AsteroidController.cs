@@ -1,6 +1,7 @@
 ﻿//using DG.Tweening; //For Sequence Only
 using System.Collections;
 using UnityEngine;
+using System.Linq;
 
 public class AsteroidController : MonoBehaviour
 {
@@ -21,6 +22,8 @@ public class AsteroidController : MonoBehaviour
 
     [HideInInspector]
     public GameController controller;
+
+    public SpriteRenderer renderer;
 
     void Start()
     {
@@ -80,17 +83,6 @@ public class AsteroidController : MonoBehaviour
 
     //private IEnumerator CheckDistance() //<---------------------------- Not a solution. Killed my laptop...
     //{
-    //    for (int i = 0; i < controller.FieldSize; i++)
-    //    {
-    //        for (int j = 0; j < controller.FieldSize; j++)
-    //        {
-    //            if (controller.AllAsteroids[i,j] != transform && Vector3.Distance(transform.localPosition, controller.AllAsteroids[i, j].localPosition) < 5)
-    //            {
-    //                StartCoroutine(ResetAsteroid(gameObject.GetComponent<Collider2D>(), gameObject.GetComponent<SpriteRenderer>()));
-    //            }
-    //        }
-    //    }
-    //    yield return new WaitForSeconds(10);
     //    StartCoroutine(CheckDistance());
     //}
 
@@ -98,8 +90,36 @@ public class AsteroidController : MonoBehaviour
     {
         if (!IsRespawning)
         {
-            transform.Translate(new Vector3(AsteroidDirection.x, AsteroidDirection.y, 0) * Time.deltaTime * Speed, Space.Self);
+            if (transform != null)
+            {
+                transform.Translate(new Vector3(AsteroidDirection.x, AsteroidDirection.y, 0) * Time.deltaTime * Speed, Space.Self);
+            
+                var nearest = controller.AllInstantiatedAsteroids.Where(e => e != null && Vector2.Distance(transform.localPosition, e.localPosition) <= 0.8f && e.position != transform.position).FirstOrDefault();
+
+                if (nearest != null)
+                {
+                    nearest.gameObject.GetComponent<AsteroidController>().Collided();
+                    Collided();
+                }
+            }
         }
+    }
+
+    public void Collided()
+    {
+        IsRespawning = true;
+        Destroy(gameObject);
+        //StartCoroutine(ResetAsteroid(renderer));
+    }
+
+    private void OnBecameVisible()
+    {
+        GetComponent<SpriteRenderer>().enabled = true;
+    }
+
+    private void OnBecameInvisible()
+    {
+        GetComponent<SpriteRenderer>().enabled = false;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -110,13 +130,12 @@ public class AsteroidController : MonoBehaviour
             {
                 controller.AddPoints();
             }
-            StartCoroutine(ResetAsteroid(gameObject.GetComponent<Collider2D>(), gameObject.GetComponent<SpriteRenderer>()));
+            StartCoroutine(ResetAsteroid(gameObject.GetComponent<SpriteRenderer>()));
         }
     }
 
-    private IEnumerator ResetAsteroid(Collider2D collider, SpriteRenderer spriteRenderer)
+    private IEnumerator ResetAsteroid(SpriteRenderer spriteRenderer)
     {
-        collider.enabled = false;
         spriteRenderer.enabled = false;
         transform.parent = parent;
         IsRespawning = true;
@@ -131,7 +150,6 @@ public class AsteroidController : MonoBehaviour
         yield return Delay;
 
         transform.parent = null;
-        collider.enabled = true;
         spriteRenderer.enabled = true;
         IsRespawning = false;
         //InitiateAsteroidMovement();
