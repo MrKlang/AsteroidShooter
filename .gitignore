@@ -39,3 +39,5 @@ Logs/IncrementalCompiler/unity_incremental_compiler_server.log
 Logs/IncrementalCompiler/Assembly-CSharp.rsp
 *.rsp
 *.log
+AsteroidShooter.zip
+Logs/IncrementalCompiler/unity_incremental_compiler_server.log

@@ -105,6 +105,7 @@ public class GameController : MonoBehaviour
 
     private void SetEmptyAsteroidsData()
     {
+        AsteroidsData = new AsteroidsData();
         AsteroidsData.AsteroidDirection = new Vector2[FieldSize, FieldSize];
         AsteroidsData.AsteroidSpeed = new float[FieldSize, FieldSize];
         SaveExists = false;
