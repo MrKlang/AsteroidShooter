@@ -32,6 +32,7 @@ public class AsteroidController : MonoBehaviour
         parent = transform.parent;
         transform.parent = null;
 
+        controller.spatialHashingInstance.Insert(transform.position, transform.position);
         //InitiateAsteroidMovement(); // uncomment to use sequence
         //StartCoroutine(CheckDistance()); //U*ncomment to use mathematic way to check collision (not recommended)
     }
@@ -92,13 +93,18 @@ public class AsteroidController : MonoBehaviour
         {
             if (transform != null)
             {
+                Vector2 currentPosition = new Vector2(transform.localPosition.x, transform.localPosition.y);
+                controller.spatialHashingInstance.UpdateCells(currentPosition + AsteroidDirection * Time.deltaTime * Speed, currentPosition);
                 transform.Translate(new Vector3(AsteroidDirection.x, AsteroidDirection.y, 0) * Time.deltaTime * Speed, Space.Self);
-            
-                var nearest = controller.AllInstantiatedAsteroids.Where(e => e != null && Vector2.Distance(transform.localPosition, e.localPosition) <= 0.8f && e.position != transform.position).FirstOrDefault();
+                currentPosition = new Vector2(transform.localPosition.x, transform.localPosition.y);
 
-                if (nearest != null)
+                var near = controller.spatialHashingInstance.GetNearbyObjects(currentPosition);
+                var nearest = near.Where(e=>Vector2.Distance(e, currentPosition) <=1.0f && e != currentPosition).FirstOrDefault();
+
+                if (nearest != Vector2.zero)
                 {
-                    nearest.gameObject.GetComponent<AsteroidController>().Collided();
+                    controller.spatialHashingInstance.Remove(currentPosition);
+                    //nearest.gameObject.GetComponent<AsteroidController>().Collided();
                     Collided();
                 }
             }
@@ -108,31 +114,31 @@ public class AsteroidController : MonoBehaviour
     public void Collided()
     {
         IsRespawning = true;
-        Destroy(gameObject);
-        //StartCoroutine(ResetAsteroid(renderer));
+        //Destroy(gameObject);
+        StartCoroutine(ResetAsteroid(renderer));
     }
 
     private void OnBecameVisible()
     {
-        GetComponent<SpriteRenderer>().enabled = true;
+        renderer.enabled = true;
     }
 
     private void OnBecameInvisible()
     {
-        GetComponent<SpriteRenderer>().enabled = false;
+        renderer.enabled = false;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (!collision.transform.CompareTag("Player"))
-        {
-            if(collision.transform.CompareTag("Bullet"))
-            {
-                controller.AddPoints();
-            }
-            StartCoroutine(ResetAsteroid(gameObject.GetComponent<SpriteRenderer>()));
-        }
-    }
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //    if (!collision.transform.CompareTag("Player"))
+    //    {
+    //        if(collision.transform.CompareTag("Bullet"))
+    //        {
+    //            controller.AddPoints();
+    //        }
+    //        StartCoroutine(ResetAsteroid(gameObject.GetComponent<SpriteRenderer>()));
+    //    }
+    //}
 
     private IEnumerator ResetAsteroid(SpriteRenderer spriteRenderer)
     {

@@ -244,12 +244,17 @@ MonoBehaviour:
   Player: {fileID: 49125825}
   RandomMinNumber: -2
   RandomMaxNumber: 2
-  RandomSpeedMinNumber: 1
-  RandomSpeedMaxNumber: 5
+  RandomSpeedMinNumber: 0.5
+  RandomSpeedMaxNumber: 0.7
   camera: {fileID: 1472005996}
+  CellSize: 16
+  Columns: 10
   SpawnPointsOutsidePlayerFrustrum: []
   SaveExists: 0
-  AllAsteroids: []
+  AllInstantiatedAsteroids: []
+  AllNotInstantiatedAsteroidsPositions: []
+  AllNotInstantiatedAsteroidsVectors: []
+  AllNotInstantiatedAsteroidsSpeed: []
 --- !u!1 &772589312
 GameObject:
   m_ObjectHideFlags: 0
@@ -986,7 +991,6 @@ GameObject:
   - component: {fileID: 2146888611}
   - component: {fileID: 2146888610}
   - component: {fileID: 2146888609}
-  - component: {fileID: 2146888608}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -994,23 +998,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2146888608
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2146888607}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 288
 --- !u!114 &2146888609
 MonoBehaviour:
   m_ObjectHideFlags: 0

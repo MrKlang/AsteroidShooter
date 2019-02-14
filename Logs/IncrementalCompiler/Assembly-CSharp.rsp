@@ -331,4 +331,5 @@
 -i:D:/Documents/GitHub/SpaceInvader/SpaceInvader/AsteroidShooter/Assets/Scripts/BulletController.cs
 -i:D:/Documents/GitHub/SpaceInvader/SpaceInvader/AsteroidShooter/Assets/Scripts/GameController.cs
 -i:D:/Documents/GitHub/SpaceInvader/SpaceInvader/AsteroidShooter/Assets/Scripts/PlayerController.cs
+-i:D:/Documents/GitHub/SpaceInvader/SpaceInvader/AsteroidShooter/Assets/Scripts/SpatialHashingClass.cs
 -v:0
