@@ -92,8 +92,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4146864105730627724}
   - component: {fileID: 4146864105730627721}
-  - component: {fileID: 4146864105730627726}
-  - component: {fileID: 4146864105730627727}
   - component: {fileID: 4146864105730627720}
   m_Layer: 5
   m_Name: Player
@@ -165,57 +163,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &4146864105730627726
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4146864105730627725}
-  m_BodyType: 2
-  m_Simulated: 0
-  m_UseFullKinematicContacts: 1
-  m_UseAutoMass: 0
-  m_Mass: 0.0001
-  m_LinearDrag: 0
-  m_AngularDrag: 0
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!60 &4146864105730627727
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4146864105730627725}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.49358684, y: -0.4369992}
-      - {x: -0.0030454148, y: 0.43030182}
-      - {x: -0.00060913974, y: 0.43542662}
-      - {x: 0.4975307, y: -0.4327356}
-      - {x: -0.00390625, y: -0.18359375}
 --- !u!114 &4146864105730627720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -232,4 +179,5 @@ MonoBehaviour:
   RotationSpeed: 200
   Bullet: {fileID: 8503973899143814421, guid: 173b9a831a8d88d40a26b08d637d7a06, type: 3}
   PlayerCamera: {fileID: 4146864104972535329}
+  Grid: {fileID: 0}
   GameOverCanvas: {fileID: 0}

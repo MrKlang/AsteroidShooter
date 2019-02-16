@@ -218,7 +218,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 169740019}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 143.05554, y: 1013.063, z: 64.27288}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -251,10 +251,6 @@ MonoBehaviour:
   Columns: 10
   SpawnPointsOutsidePlayerFrustrum: []
   SaveExists: 0
-  AllInstantiatedAsteroids: []
-  AllNotInstantiatedAsteroidsPositions: []
-  AllNotInstantiatedAsteroidsVectors: []
-  AllNotInstantiatedAsteroidsSpeed: []
 --- !u!1 &772589312
 GameObject:
   m_ObjectHideFlags: 0
@@ -1204,5 +1200,7 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4146864105730627726, guid: b0627061ddf98214b9e3e70014faa574, type: 3}
+    - {fileID: 4146864105730627727, guid: b0627061ddf98214b9e3e70014faa574, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b0627061ddf98214b9e3e70014faa574, type: 3}

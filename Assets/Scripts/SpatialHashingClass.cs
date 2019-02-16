@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
 namespace Assets.Scripts
@@ -32,7 +31,7 @@ namespace Assets.Scripts
             }
             else
             {
-                CellsDictionary[key] = new List<Vector2> { obj };
+                CellsDictionary.Add(key, new List<Vector2> { obj });
             }
 
             if (ObjectsDictionary.ContainsKey(obj))
@@ -69,7 +68,10 @@ namespace Assets.Scripts
             {
                 for (int i = 0; i < ObjectsDictionary[vec].Count; i++)
                 {
-                    CellsDictionary[ObjectsDictionary[vec][i]].Remove(vec);
+                    if (CellsDictionary.ContainsKey(ObjectsDictionary[vec][i]))
+                    {
+                        CellsDictionary[ObjectsDictionary[vec][i]].Remove(vec);
+                    }
                 }
             }
 
@@ -77,14 +79,6 @@ namespace Assets.Scripts
             {
                 CellsDictionary.Remove(key);
             }
-        }
-
-        public void Clear()
-        {
-            var keys = CellsDictionary.Keys.ToArray();
-            for (var i = 0; i < keys.Length; i++)
-                CellsDictionary[keys[i]].Clear();
-            ObjectsDictionary.Clear();
         }
 
         public void Reset()
@@ -99,52 +93,58 @@ namespace Assets.Scripts
                     (Math.Floor(v.y / CellSize)) * (BoundSize/CellSize));
         }
 
-        internal List<Vector2> GetNearbyObjects(Vector2 obj)
+        public List<Vector2> GetNearbyObjectsPosition(Vector2 vector)
         {
-            List<Vector2> objects = new List<Vector2>();
-            List<int> bucketIds = GetAllNeighbouring(obj);
-            foreach (var item in bucketIds)
-            {
-                if (CellsDictionary.ContainsKey(item) && CellsDictionary[item].Count > 0)
-                {
-                    for (int i = 0; i < CellsDictionary[item].Count; i++)
-                    {
-                        if (!objects.Contains(CellsDictionary[item][i]))
-                        {
-                            objects.Add(CellsDictionary[item][i]);
-                        }
-                    }
-                }
-            }
-            return objects;
+            var key = Key(vector);
+            return CellsDictionary.ContainsKey(key) ? CellsDictionary[key] : new List<Vector2>();
         }
 
-        private List<int> GetAllNeighbouring(Vector2 obj)
-        {
-            List<int> neighbours = new List<int>();
+        //internal List<Vector2> GetNearbyObjects(Vector2 obj)
+        //{
+        //    List<Vector2> objects = new List<Vector2>();
+        //    List<int> bucketIds = GetAllNeighbouring(obj);
+        //    foreach (var item in bucketIds)
+        //    {
+        //        if (CellsDictionary.ContainsKey(item) && CellsDictionary[item].Count > 0)
+        //        {
+        //            for (int i = 0; i < CellsDictionary[item].Count; i++)
+        //            {
+        //                if (!objects.Contains(CellsDictionary[item][i]))
+        //                {
+        //                    objects.Add(CellsDictionary[item][i]);
+        //                }
+        //            }
+        //        }
+        //    }
+        //    return objects;
+        //}
 
-            Vector2 min = new Vector2(
-                obj.x - (0.9f),
-                obj.y - (0.9f));
-            Vector2 max = new Vector2(
-                obj.x + (0.9f),
-                obj.y + (0.9f));
+        //private List<int> GetAllNeighbouring(Vector2 obj)
+        //{
+        //    List<int> neighbours = new List<int>();
 
-            AddCell(min, neighbours);
-            AddCell(new Vector2(max.x, min.y), neighbours);
-            AddCell(max, neighbours);
-            AddCell(new Vector2(min.x, max.y), neighbours);
+        //    Vector2 min = new Vector2(
+        //        obj.x - (10f),
+        //        obj.y - (10f));
+        //    Vector2 max = new Vector2(
+        //        obj.x + (10f),
+        //        obj.y + (10f));
 
-            return neighbours;
-        }
+        //    AddCell(min, neighbours);
+        //    AddCell(new Vector2(max.x, min.y), neighbours);
+        //    AddCell(max, neighbours);
+        //    AddCell(new Vector2(min.x, max.y), neighbours);
 
-        private void AddCell(Vector2 vector, List<int> cellList)
-        {
-            int cellPosition = Key(vector);
+        //    return neighbours;
+        //}
 
-            if (!cellList.Contains(cellPosition))
-                cellList.Add(cellPosition);
+        //private void AddCell(Vector2 vector, List<int> cellList)
+        //{
+        //    int cellPosition = Key(vector);
 
-        }
+        //    if (!cellList.Contains(cellPosition))
+        //        cellList.Add(cellPosition);
+
+        //}
     }
 }
