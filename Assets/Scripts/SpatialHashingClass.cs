@@ -103,53 +103,5 @@ namespace Assets.Scripts
             var key = Key(vector.NewPosition);
             return CellsDictionary.ContainsKey(key) ? CellsDictionary[key] : new List<SimpleGameObject>();
         }
-
-        //internal List<Vector2> GetNearbyObjects(Vector2 obj)
-        //{
-        //    List<Vector2> objects = new List<Vector2>();
-        //    List<int> bucketIds = GetAllNeighbouring(obj);
-        //    foreach (var item in bucketIds)
-        //    {
-        //        if (CellsDictionary.ContainsKey(item) && CellsDictionary[item].Count > 0)
-        //        {
-        //            for (int i = 0; i < CellsDictionary[item].Count; i++)
-        //            {
-        //                if (!objects.Contains(CellsDictionary[item][i]))
-        //                {
-        //                    objects.Add(CellsDictionary[item][i]);
-        //                }
-        //            }
-        //        }
-        //    }
-        //    return objects;
-        //}
-
-        //private List<int> GetAllNeighbouring(Vector2 obj)
-        //{
-        //    List<int> neighbours = new List<int>();
-
-        //    Vector2 min = new Vector2(
-        //        obj.x - (10f),
-        //        obj.y - (10f));
-        //    Vector2 max = new Vector2(
-        //        obj.x + (10f),
-        //        obj.y + (10f));
-
-        //    AddCell(min, neighbours);
-        //    AddCell(new Vector2(max.x, min.y), neighbours);
-        //    AddCell(max, neighbours);
-        //    AddCell(new Vector2(min.x, max.y), neighbours);
-
-        //    return neighbours;
-        //}
-
-        //private void AddCell(Vector2 vector, List<int> cellList)
-        //{
-        //    int cellPosition = Key(vector);
-
-        //    if (!cellList.Contains(cellPosition))
-        //        cellList.Add(cellPosition);
-
-        //}
     }
 }

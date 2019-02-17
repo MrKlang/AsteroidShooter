@@ -13,17 +13,14 @@ using System.Threading.Tasks;
 
 public class GameController : MonoBehaviour
 {
-    public Text Text;
-    public GameObject GridContainer;
-    public GameObject Asteroid;
-    public int FieldSize;
-    public Transform Player;
-    public float RandomMinNumber, RandomMaxNumber;
-    public float RandomSpeedMinNumber, RandomSpeedMaxNumber;
-    public Camera camera;
-    
-    public int CellSize;
-    public int Columns;
+    [HideInInspector]
+    public SpatialHashingClass SpatialHashingInstance;
+
+    [HideInInspector]
+    public Dictionary<int, List<SimpleGameObject>> ThreadsDictionary;
+
+    [HideInInspector]
+    public readonly Queue<Action> ExecuteOnMainThread = new Queue<Action>();
 
     [HideInInspector]
     public List<Vector2> SpawnPointsOutsidePlayerFrustrum = new List<Vector2>();
@@ -32,41 +29,47 @@ public class GameController : MonoBehaviour
     public bool SaveExists;
 
     [HideInInspector]
-    public List<SimpleGameObject> AllAsteroids;
+    public List<SimpleGameObject> AllObjects;
 
+    public Text Text;
+    public Camera Camera;
+    public Transform Player;
+    public GameObject GridContainer;
+    public GameObject Asteroid;
+    public int CellSize;
+    public int Columns;
+    public int FieldSize;
+    public int Points;
+    public int TasksMaxAmount;
+    public float RandomMinNumber, RandomMaxNumber;
+    public float RandomSpeedMinNumber, RandomSpeedMaxNumber;
+
+    private bool Finished;
     private static int TotalPoints = 0;
-    private AsteroidsData asteroidsData;
-    private Vector3 cameraRightUpperCornerPosition;
-    private Vector3 upperRightCornerInWorldSpace;
-    private Vector3 lowerLeftCornerInWorldSpace;
-    private bool finished;
-
-    public readonly Queue<Action> ExecuteOnMainThread = new Queue<Action>();
-
-    private Dictionary<int, List<SimpleGameObject>> ThreadsDictionary;
-
-    public SpatialHashingClass spatialHashingInstance;
+    private AsteroidsData AsteroidsData;
+    private Vector3 CameraRightUpperCornerPosition;
+    private Vector3 UpperRightCornerInWorldSpace;
+    private Vector3 LowerLeftCornerInWorldSpace;
+    private WaitForSeconds Delay = new WaitForSeconds(1f);
 
     private void Awake()
     {
         Time.timeScale = 1;
     }
 
-    void Start()
+    private void Start()
     {
-        Player.localPosition = new Vector3(160 * 3 / 2, 160 * 3 / 2, 0);
+        AllObjects = new List<SimpleGameObject>();
 
-        spatialHashingInstance = new SpatialHashingClass(FieldSize, Columns);
-
-        AllAsteroids = new List<SimpleGameObject>();
+        SpatialHashingInstance = new SpatialHashingClass(FieldSize, Columns);
 
         ThreadsDictionary = new Dictionary<int, List<SimpleGameObject>>();
+
+        SetPlayerData();
 
         CalculateCameraFrustrumCorners();
 
         TryLoadingAsteroidsDataFromFile();
-
-        int j = 0;
 
         for (int x = 0; x < FieldSize; x++)
         {
@@ -74,19 +77,22 @@ public class GameController : MonoBehaviour
             {
                 var asteroidLocalPosition = new Vector2((x * 3), (y * 3));
 
+                if(!(Vector2.Distance(asteroidLocalPosition, new Vector2(Player.localPosition.x, Player.localPosition.y)) > 1.0f)) {
+                    continue;
+                }
                 if (!CheckIfPositionIsNotInFrustrum(asteroidLocalPosition))
                 {
                     var objInst = Instantiate(Asteroid, new Vector3(asteroidLocalPosition.x, asteroidLocalPosition.y, 0), Quaternion.identity, GridContainer.transform);
                     var asteroidController = objInst.GetComponent<AsteroidController>();
-                    asteroidController.controller = this;
+                    asteroidController.Controller = this;
 
                     SetAsteroidDirectionAndSpeedIfSaveDoesNotExist(x, y);
 
-                    asteroidController.VirtualGameObject = new SimpleGameObject(objInst.transform.position, objInst.transform.position, new Vector2(asteroidsData.AsteroidXDirection[x, y], asteroidsData.AsteroidYDirection[x, y]), 0.9f, asteroidsData.AsteroidSpeed[x, y], SimpleGameObjectType.Asteroid, asteroidController);
+                    asteroidController.AsteroidSimpleGameObject = new SimpleGameObject(objInst.transform.position, objInst.transform.position, new Vector2(AsteroidsData.AsteroidXDirection[x, y], AsteroidsData.AsteroidYDirection[x, y]), 0.9f, AsteroidsData.AsteroidSpeed[x, y], SimpleGameObjectTypeEnum.Asteroid, asteroidController);
 
-                    AllAsteroids.Add(asteroidController.VirtualGameObject);
+                    AllObjects.Add(asteroidController.AsteroidSimpleGameObject);
 
-                    spatialHashingInstance.Insert(asteroidController.VirtualGameObject, asteroidController.VirtualGameObject);
+                    SpatialHashingInstance.Insert(asteroidController.AsteroidSimpleGameObject, asteroidController.AsteroidSimpleGameObject);
                 }
                 else
                 {
@@ -94,41 +100,60 @@ public class GameController : MonoBehaviour
 
                     SetAsteroidDirectionAndSpeedIfSaveDoesNotExist(x, y);
 
-                    var newSimpleObject = new SimpleGameObject(asteroidLocalPosition, asteroidLocalPosition, new Vector2(asteroidsData.AsteroidXDirection[x, y], asteroidsData.AsteroidYDirection[x, y]), 0.9f, asteroidsData.AsteroidSpeed[x, y], SimpleGameObjectType.Asteroid, null);
+                    var newSimpleObject = new SimpleGameObject(asteroidLocalPosition, asteroidLocalPosition, new Vector2(AsteroidsData.AsteroidXDirection[x, y], AsteroidsData.AsteroidYDirection[x, y]), 0.9f, AsteroidsData.AsteroidSpeed[x, y], SimpleGameObjectTypeEnum.Asteroid, null);
 
-                    AllAsteroids.Add(newSimpleObject);
-                    spatialHashingInstance.Insert(newSimpleObject, newSimpleObject);
+                    AllObjects.Add(newSimpleObject); //Commenting these two lines will make the app spawn only those asteroids that are visible in player frustrum (only then collision works as it should)
+                    SpatialHashingInstance.Insert(newSimpleObject, newSimpleObject); //Commenting these two lines will make the app spawn only those asteroids that are visible in player frustrum (only then collision works as it should)
                 }
             }
         }
 
-        for(int i=0;i<AllAsteroids.Count;i++)
+        SetThreadsDictionary();
+
+        Finished = true;
+
+        Player.GetComponent<PlayerController>().IsAlive = true;
+
+        SaveAsteroidsIfNoSaveFound();
+    }
+
+    private void SetThreadsDictionary()
+    {
+        for (int i = 0; i < AllObjects.Count; i++)
         {
-            if (ThreadsDictionary.ContainsKey(i % 256))
+            if (ThreadsDictionary.ContainsKey(i % TasksMaxAmount))
             {
-                if (!ThreadsDictionary[i % 256].Contains(AllAsteroids[i]) && !AllAsteroids[i].HasCollided)
+                if (!ThreadsDictionary[i % TasksMaxAmount].Contains(AllObjects[i]) && !AllObjects[i].HasCollided)
                 {
-                    ThreadsDictionary[i % 256].Add(AllAsteroids[i]);
+                    ThreadsDictionary[i % TasksMaxAmount].Add(AllObjects[i]);
                 }
             }
             else
             {
-                ThreadsDictionary.Add(i % 256, new List<SimpleGameObject> { AllAsteroids[i] });
+                ThreadsDictionary.Add(i % TasksMaxAmount, new List<SimpleGameObject> { AllObjects[i] });
             }
         }
+    }
 
-        finished = true;
+    private void SetPlayerData()
+    {
+        Player.localPosition = new Vector3(160 * 3 / 2, 160 * 3 / 2, 0);
 
-        SaveAsteroidsIfNoSaveFound();
+        var playerController = Player.GetComponent<PlayerController>();
+
+        playerController.Controller = this;
+
+        playerController.PlayerSimpleGameObject = new SimpleGameObject(Player.localPosition, Player.localPosition, Vector2.up, 0.9f, playerController.Speed, SimpleGameObjectTypeEnum.Player, playerController);
+        AllObjects.Add(playerController.PlayerSimpleGameObject);
     }
 
     private void SetAsteroidDirectionAndSpeedIfSaveDoesNotExist(int x, int y)
     {
         if (!SaveExists)
         {
-            asteroidsData.AsteroidXDirection[x, y] = UnityEngine.Random.Range(RandomMinNumber, RandomMaxNumber);
-            asteroidsData.AsteroidYDirection[x, y] = UnityEngine.Random.Range(RandomMinNumber, RandomMaxNumber);
-            asteroidsData.AsteroidSpeed[x, y] = UnityEngine.Random.Range(RandomSpeedMinNumber, RandomSpeedMaxNumber);
+            AsteroidsData.AsteroidXDirection[x, y] = UnityEngine.Random.Range(RandomMinNumber, RandomMaxNumber);
+            AsteroidsData.AsteroidYDirection[x, y] = UnityEngine.Random.Range(RandomMinNumber, RandomMaxNumber);
+            AsteroidsData.AsteroidSpeed[x, y] = UnityEngine.Random.Range(RandomSpeedMinNumber, RandomSpeedMaxNumber);
         }
     }
 
@@ -140,37 +165,40 @@ public class GameController : MonoBehaviour
         {
             try
             {
-                ExecuteOnMainThread.Dequeue().Invoke(); // Tends to randomly throw NullReferenceException. Why?
+                ExecuteOnMainThread.Dequeue().Invoke();
             }
             catch (Exception e)
             {
-                Debug.LogError(e + " : " + e.StackTrace);
+                //Debug.LogError(e + " : " + e.StackTrace); <------ Eats time
             }
         }
 
-        if (finished)
+        if (Finished)
         {
-            for (int i = 0; i < AllAsteroids.Count; i++)
+            for (int i = 0; i < AllObjects.Count; i++)
             {
-                if (AllAsteroids[i].HasCollided)
+                if (AllObjects[i].HasCollided)
                 {
                     continue;
                 }
 
-                AllAsteroids[i].OldPosition = AllAsteroids[i].NewPosition;
-                AllAsteroids[i].NewPosition = AllAsteroids[i].OldPosition + AllAsteroids[i].MovementDirection * Time.deltaTime * AllAsteroids[i].Speed;
-
-                if (!CheckIfPositionIsNotInFrustrum(AllAsteroids[i].NewPosition) && AllAsteroids[i].InstantiatedObjectController == null)
+                if (AllObjects[i].Type == SimpleGameObjectTypeEnum.Asteroid)
                 {
-                    var objInst = Instantiate(Asteroid, AllAsteroids[i].NewPosition, Quaternion.identity, GridContainer.transform);
-                    var asteroidController = objInst.GetComponent<AsteroidController>();
-                    asteroidController.controller = this;
-                    AllAsteroids[i].InstantiatedObjectController = asteroidController;
+                    AllObjects[i].OldPosition = AllObjects[i].NewPosition;
+                    AllObjects[i].NewPosition = AllObjects[i].OldPosition + AllObjects[i].MovementDirection * Time.deltaTime * AllObjects[i].Speed;
                 }
 
-                if (AllAsteroids[i].InstantiatedObjectController != null)
+                if (!CheckIfPositionIsNotInFrustrum(AllObjects[i].NewPosition) && AllObjects[i].SimpleObjectController == null)
                 {
-                    AllAsteroids[i].InstantiatedObjectController.Move(AllAsteroids[i].NewPosition - AllAsteroids[i].OldPosition);
+                    var objInst = Instantiate(Asteroid, AllObjects[i].NewPosition, Quaternion.identity, GridContainer.transform);
+                    var asteroidController = objInst.GetComponent<AsteroidController>();
+                    asteroidController.Controller = this;
+                    AllObjects[i].SimpleObjectController = asteroidController;
+                }
+
+                if (AllObjects[i].SimpleObjectController != null && AllObjects[i].SimpleObjectController.GetType() == 0)
+                {
+                    (AllObjects[i].SimpleObjectController as AsteroidController).Move(AllObjects[i].NewPosition - AllObjects[i].OldPosition);
                 }
                 
             }
@@ -196,27 +224,20 @@ public class GameController : MonoBehaviour
                     continue;
                 }
 
-                spatialHashingInstance.UpdateCells(newPosList[i], newPosList[i]);
+                SpatialHashingInstance.UpdateCells(newPosList[i], newPosList[i]);
 
-                var near = spatialHashingInstance.GetNearbyObjectsPosition(newPosList[i]);
+                var near = SpatialHashingInstance.GetNearbyObjectsPosition(newPosList[i]);
                 var nearest = near.Where(e => Vector2.Distance(e.NewPosition, newPosList[i].NewPosition) <= 0.8f && newPosList[i] != e).FirstOrDefault();
 
                 if (nearest != null)
                 {
-                    spatialHashingInstance.Remove(newPosList[i]);
+                    SpatialHashingInstance.Remove(newPosList[i]);
 
                     newPosList[i].HasCollided = true;
                     nearest.HasCollided = true;
 
-                    if (newPosList[i].InstantiatedObjectController != null)
-                    {
-                        newPosList[i].InstantiatedObjectController.Collided(); // Collision is rarely detected (although if small amount is created [f.e in camera frustrum] then all collisions work as they should) threading mistake/problem?
-                    }
-
-                    if (nearest.InstantiatedObjectController != null)
-                    {
-                        nearest.InstantiatedObjectController.Collided();
-                    }
+                    DefineAndStartCollisionBehaviour(newPosList[i],nearest);
+                    DefineAndStartCollisionBehaviour(nearest, newPosList[i]);
 
                     try
                     {
@@ -228,6 +249,33 @@ public class GameController : MonoBehaviour
                 }
             }
         });
+    }
+
+    private void DefineAndStartCollisionBehaviour(SimpleGameObject simpleObject, SimpleGameObject nearestSimpleObject)
+    {
+        switch (simpleObject.SimpleObjectController.GetType())
+        {
+            case 0 : //Asteroid
+                if (nearestSimpleObject.Type == SimpleGameObjectTypeEnum.Asteroid || nearestSimpleObject.Type == SimpleGameObjectTypeEnum.Bullet)
+                {
+                    simpleObject.SimpleObjectController.Collided();
+                }
+                break;
+            case 1 : //Player
+                if (nearestSimpleObject.Type == SimpleGameObjectTypeEnum.Asteroid)
+                {
+                    simpleObject.SimpleObjectController.Collided();
+                }
+                break;
+            case 2 : //Bullet
+                if (nearestSimpleObject.Type == SimpleGameObjectTypeEnum.Asteroid)
+                {
+                    simpleObject.SimpleObjectController.Collided();
+                }
+                break;
+            default:
+                break;
+        }
     }
 
     private void DealWithIt(SimpleGameObject newPosList,SimpleGameObject nearest)
@@ -242,7 +290,7 @@ public class GameController : MonoBehaviour
 
     private IEnumerator DealWithAsteroidThatCollided(SimpleGameObject asteroid)
     {
-        yield return new WaitForSeconds(1.0f);
+        yield return Delay;
 
         if (asteroid != null)
         {
@@ -255,15 +303,15 @@ public class GameController : MonoBehaviour
 
     private void CalculateCameraFrustrumCorners()
     {
-        cameraRightUpperCornerPosition = new Vector3(Screen.width+50, Screen.height+150, 0);
+        CameraRightUpperCornerPosition = new Vector3(Screen.width+50, Screen.height+150, 0);
 
-        upperRightCornerInWorldSpace = camera.ScreenToWorldPoint(cameraRightUpperCornerPosition);
-        lowerLeftCornerInWorldSpace = camera.ScreenToWorldPoint(new Vector3(-50,-150,0));
+        UpperRightCornerInWorldSpace = Camera.ScreenToWorldPoint(CameraRightUpperCornerPosition);
+        LowerLeftCornerInWorldSpace = Camera.ScreenToWorldPoint(new Vector3(-50,-150,0));
     }
 
     public bool CheckIfPositionIsNotInFrustrum(Vector2 asteroidLocalPosition)
     {
-        if(!(asteroidLocalPosition.x < upperRightCornerInWorldSpace.x && asteroidLocalPosition.x > lowerLeftCornerInWorldSpace.x && asteroidLocalPosition.y < upperRightCornerInWorldSpace.y && asteroidLocalPosition.y > lowerLeftCornerInWorldSpace.y))
+        if(!(asteroidLocalPosition.x < UpperRightCornerInWorldSpace.x && asteroidLocalPosition.x > LowerLeftCornerInWorldSpace.x && asteroidLocalPosition.y < UpperRightCornerInWorldSpace.y && asteroidLocalPosition.y > LowerLeftCornerInWorldSpace.y))
         {
             return true;
         }
@@ -280,7 +328,7 @@ public class GameController : MonoBehaviour
             {
                 BinaryFormatter binaryFormatter = new BinaryFormatter();
                 FileStream file = File.Open(Application.persistentDataPath + "/AsteroidsData.dat", FileMode.Open);
-                asteroidsData = (AsteroidsData)binaryFormatter.Deserialize(file);
+                AsteroidsData = (AsteroidsData)binaryFormatter.Deserialize(file);
                 file.Close();
                 SaveExists = true;
             }
@@ -296,10 +344,10 @@ public class GameController : MonoBehaviour
 
     private void SetEmptyAsteroidsData()
     {
-        asteroidsData = new AsteroidsData();
-        asteroidsData.AsteroidXDirection = new float[FieldSize, FieldSize];
-        asteroidsData.AsteroidYDirection = new float[FieldSize, FieldSize];
-        asteroidsData.AsteroidSpeed = new float[FieldSize, FieldSize];
+        AsteroidsData = new AsteroidsData();
+        AsteroidsData.AsteroidXDirection = new float[FieldSize, FieldSize];
+        AsteroidsData.AsteroidYDirection = new float[FieldSize, FieldSize];
+        AsteroidsData.AsteroidSpeed = new float[FieldSize, FieldSize];
         SaveExists = false;
     }
 
@@ -310,7 +358,7 @@ public class GameController : MonoBehaviour
         {
             BinaryFormatter binaryFormatter = new BinaryFormatter();
             FileStream file = File.Open(Application.persistentDataPath + "/AsteroidsData.dat", FileMode.OpenOrCreate);
-            binaryFormatter.Serialize(file, asteroidsData);
+            binaryFormatter.Serialize(file, AsteroidsData);
             file.Close();
         }
     }
@@ -325,42 +373,4 @@ public class GameController : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
-}
-
-[Serializable]
-public class AsteroidsData
-{
-    public float[,] AsteroidXDirection;
-    public float[,] AsteroidYDirection;
-    public float[,] AsteroidSpeed;
-}
-
-public class SimpleGameObject
-{
-    public Vector2 OldPosition;
-    public Vector2 NewPosition;
-    public Vector2 MovementDirection;
-    public float Radius;
-    public float Speed;
-    public SimpleGameObjectType Type;
-    public AsteroidController InstantiatedObjectController;
-    public bool HasCollided;
-
-    public SimpleGameObject(Vector2 oldPosition, Vector2 newPosition, Vector2 movementDirection, float radius, float speed, SimpleGameObjectType type, AsteroidController instantiatedObjectController)
-    {
-        OldPosition = oldPosition;
-        NewPosition = newPosition;
-        MovementDirection = movementDirection;
-        Radius = radius;
-        Speed = speed;
-        Type = type;
-        InstantiatedObjectController = instantiatedObjectController;
-    }
-}
-
-public enum SimpleGameObjectType
-{
-    Asteroid,
-    Bullet,
-    Player
 }

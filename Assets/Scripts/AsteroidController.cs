@@ -1,55 +1,55 @@
-﻿using System;
+﻿using Assets.Scripts;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AsteroidController : MonoBehaviour
+public class AsteroidController : MonoBehaviour,IController
 {
-    private WaitForSeconds Delay = new WaitForSeconds(1f);
-    private Transform parent;
-    private bool IsRespawning;
+    [HideInInspector]
+    public GameController Controller;
 
     [HideInInspector]
-    public GameController controller;
+    public SimpleGameObject AsteroidSimpleGameObject;
 
-    [HideInInspector]
-    public SimpleGameObject VirtualGameObject;
-
-    public SpriteRenderer renderer;
-
-    public readonly Queue<Action> ExecuteOnMainThread = new Queue<Action>();
+    private Transform Parent;
 
     void Start()
     {
-        parent = transform.parent;
+        Parent = transform.parent;
         transform.parent = null;
-    }
-
-    private void Update()
-    {
-        if (ExecuteOnMainThread.Count > 0)
-        {
-            ExecuteOnMainThread.Dequeue().Invoke();
-        }
     }
 
     public void Move(Vector2 newPosition)
     {
-        if (transform != null && !IsRespawning)
+        try
         {
-            transform.Translate(new Vector3(newPosition.x, newPosition.y, 0), Space.Self);
+            if (transform != null)
+            {
+                transform.Translate(new Vector3(newPosition.x, newPosition.y, 0), Space.Self);
+            }
+        }
+        catch (Exception e)
+        {
+            //Debug.LogError("Object already destroyed"); <------ Eats time
         }
     }
 
     public void Collided()
     {
-        if (VirtualGameObject.HasCollided && !IsRespawning)
+        if (AsteroidSimpleGameObject.HasCollided)
         {
             try
             {
-                ExecuteOnMainThread.Enqueue(() => {
-                    //StartCoroutine(ResetAsteroid(renderer)); <---------- Object pooling... Kinda wrong to use it here
-                    Destroy(gameObject);
+                Controller.ExecuteOnMainThread.Enqueue(() => {
+                    AsteroidSimpleGameObject.SimpleObjectController = null;
+                    try
+                    {
+                        Destroy(gameObject);
+                    }catch(Exception e)
+                    {
+                        //Debug.LogError("Object already destroyed"); <------ Eats time
+                    }
                 });
             }
             catch (Exception e)
@@ -64,22 +64,8 @@ public class AsteroidController : MonoBehaviour
         Destroy(gameObject);
     }
 
-    //private IEnumerator ResetAsteroid(SpriteRenderer spriteRenderer)
-    //{
-    //    spriteRenderer.enabled = false;
-    //    transform.parent = parent;
-    //    IsRespawning = true;
-
-    //    transform.localPosition = controller.SpawnPointsOutsidePlayerFrustrum[UnityEngine.Random.Range(0, controller.SpawnPointsOutsidePlayerFrustrum.Count)];
-    //    VirtualGameObject.OldPosition = transform.localPosition;
-    //    VirtualGameObject.NewPosition = transform.localPosition;
-
-    //    yield return Delay;
-
-    //    transform.parent = null;
-    //    spriteRenderer.enabled = true;
-    //    IsRespawning = false;
-
-    //    VirtualGameObject.HasCollided = false;
-    //}
+    int IController.GetType()
+    {
+        return 0;
+    }
 }

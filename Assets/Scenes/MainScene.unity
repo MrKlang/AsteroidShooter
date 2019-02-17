@@ -236,21 +236,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb07f6379acec8c4a99e9365f853d095, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpawnPointsOutsidePlayerFrustrum: []
+  SaveExists: 0
   Text: {fileID: 1572753844}
+  Camera: {fileID: 1472005996}
+  Player: {fileID: 49125825}
   GridContainer: {fileID: 1743759236}
   Asteroid: {fileID: 3296078369934225962, guid: d26aa76414f0bda419d69b34232ba2a2,
     type: 3}
+  CellSize: 32
+  Columns: 5
   FieldSize: 160
-  Player: {fileID: 49125825}
+  Points: 0
+  TasksMaxAmount: 256
   RandomMinNumber: -2
   RandomMaxNumber: 2
   RandomSpeedMinNumber: 0.5
   RandomSpeedMaxNumber: 0.7
-  camera: {fileID: 1472005996}
-  CellSize: 32
-  Columns: 5
-  SpawnPointsOutsidePlayerFrustrum: []
-  SaveExists: 0
 --- !u!1 &772589312
 GameObject:
   m_ObjectHideFlags: 0
