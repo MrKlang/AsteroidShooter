@@ -1,344 +1,333 @@
- (0,0): [02.15.2019 08:58:19.779 PM] Unity incremental compiler server
- (0,0): [02.15.2019 08:58:19.880 PM] watchdog active on pid: 10260
- (0,0): [02.15.2019 09:11:03.515 PM] Assembly-CSharp.dll: no prior compilation found in cache. Caller PID: 10260
- (0,0): [02.15.2019 09:11:03.529 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 09:11:08.274 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 09:11:08.390 PM] Assembly-CSharp.dll compilation finished in 4861ms  source files re-parsed: 12 metadata reloaded: 215
- (0,0): [02.15.2019 09:11:08.403 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 09:12:17.903 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 09:12:18.033 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 09:12:18.097 PM] Assembly-CSharp.dll compilation finished in 194ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.15.2019 09:12:18.109 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 09:12:18.120 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 09:13:06.675 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 09:13:06.752 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 09:13:06.765 PM] Assembly-CSharp.dll compilation finished in 88ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.15.2019 09:13:06.776 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 09:13:06.788 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 09:13:21.354 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 09:13:21.441 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 09:13:21.504 PM] Assembly-CSharp.dll compilation finished in 149ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.15.2019 09:13:21.515 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 09:13:21.526 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 09:13:26.604 PM] Compiler cache size is now 15,72 MB
- (0,0): [02.15.2019 09:14:35.229 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 09:14:35.334 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 09:14:35.390 PM] Assembly-CSharp.dll compilation finished in 161ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.15.2019 09:14:35.402 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 09:14:35.413 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 09:16:18.773 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 09:16:18.857 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 09:16:18.916 PM] Assembly-CSharp.dll compilation finished in 144ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.15.2019 09:16:18.928 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 09:16:18.944 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 09:18:14.456 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 09:18:14.543 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 09:18:14.600 PM] Assembly-CSharp.dll compilation finished in 144ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.15.2019 09:18:14.612 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 09:18:14.624 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 09:21:46.837 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 09:21:46.927 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 09:21:46.992 PM] Assembly-CSharp.dll compilation finished in 154ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.15.2019 09:21:47.004 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 09:21:47.015 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 09:22:08.495 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 09:22:08.589 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 09:22:08.654 PM] Assembly-CSharp.dll compilation finished in 159ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.15.2019 09:22:08.666 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 09:22:08.677 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 09:23:29.624 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 09:23:29.711 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 09:23:29.770 PM] Assembly-CSharp.dll compilation finished in 145ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.15.2019 09:23:29.782 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 09:23:29.794 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 09:24:59.152 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 09:24:59.237 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 09:24:59.299 PM] Assembly-CSharp.dll compilation finished in 146ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.15.2019 09:24:59.310 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 09:24:59.321 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 09:28:14.576 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 09:28:14.658 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 09:28:14.727 PM] Assembly-CSharp.dll compilation finished in 150ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.15.2019 09:28:14.739 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 09:28:14.750 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 09:30:48.698 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 09:30:48.785 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 09:30:48.851 PM] Assembly-CSharp.dll compilation finished in 153ms  source files re-parsed: 2 metadata reloaded: 0
- (0,0): [02.15.2019 09:30:48.863 PM] Assembly-CSharp.dll: compilation was cached, 2 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 09:30:48.874 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 09:32:10.864 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 09:32:10.952 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 09:32:11.014 PM] Assembly-CSharp.dll compilation finished in 148ms  source files re-parsed: 2 metadata reloaded: 0
- (0,0): [02.15.2019 09:32:11.025 PM] Assembly-CSharp.dll: compilation was cached, 2 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 09:32:11.036 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 09:34:22.526 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 09:34:22.619 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 09:34:22.684 PM] Assembly-CSharp.dll compilation finished in 158ms  source files re-parsed: 2 metadata reloaded: 0
- (0,0): [02.15.2019 09:34:22.695 PM] Assembly-CSharp.dll: compilation was cached, 2 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 09:34:22.706 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 09:39:04.096 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 09:39:04.182 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 09:39:04.243 PM] Assembly-CSharp.dll compilation finished in 148ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.15.2019 09:39:04.255 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 09:39:04.266 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 09:40:18.930 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 09:40:19.016 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 09:40:19.082 PM] Assembly-CSharp.dll compilation finished in 152ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.15.2019 09:40:19.094 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 09:40:19.105 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 09:41:08.011 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 09:41:08.100 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 09:41:08.162 PM] Assembly-CSharp.dll compilation finished in 151ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.15.2019 09:41:08.174 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 09:41:08.186 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 09:42:53.341 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 09:42:53.421 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 09:42:53.484 PM] Assembly-CSharp.dll compilation finished in 144ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.15.2019 09:42:53.496 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 09:42:53.507 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 09:48:12.473 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 09:48:12.552 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 09:48:12.617 PM] Assembly-CSharp.dll compilation finished in 143ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.15.2019 09:48:12.629 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 09:48:12.640 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 09:53:20.846 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 09:53:20.976 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 09:53:21.042 PM] Assembly-CSharp.dll compilation finished in 195ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.15.2019 09:53:21.054 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 09:53:21.065 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 10:11:37.402 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 10:11:37.496 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 10:11:37.564 PM] Assembly-CSharp.dll compilation finished in 162ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.15.2019 10:11:37.576 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 10:11:37.588 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 10:15:48.568 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 10:15:48.648 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 10:15:48.710 PM] Assembly-CSharp.dll compilation finished in 142ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.15.2019 10:15:48.722 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 10:15:48.733 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 10:17:53.503 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 10:17:53.596 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 10:17:53.664 PM] Assembly-CSharp.dll compilation finished in 160ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.15.2019 10:17:53.675 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 10:17:53.687 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 10:20:24.515 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 10:20:24.628 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 10:20:24.691 PM] Assembly-CSharp.dll compilation finished in 176ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.15.2019 10:20:24.703 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 10:20:24.714 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 10:22:38.674 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 10:22:38.752 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 10:22:38.811 PM] Assembly-CSharp.dll compilation finished in 136ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.15.2019 10:22:38.823 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 10:22:38.835 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 10:23:30.702 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 10:23:30.797 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 10:23:30.864 PM] Assembly-CSharp.dll compilation finished in 161ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.15.2019 10:23:30.875 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 10:23:30.886 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 10:24:25.651 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 10:24:25.728 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 10:24:25.798 PM] Assembly-CSharp.dll compilation finished in 146ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.15.2019 10:24:25.810 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 10:24:25.821 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 10:25:20.247 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 10:25:20.326 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 10:25:20.384 PM] Assembly-CSharp.dll compilation finished in 137ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.15.2019 10:25:20.396 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 10:25:20.408 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 10:25:57.605 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 10:25:57.684 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 10:25:57.742 PM] Assembly-CSharp.dll compilation finished in 136ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.15.2019 10:25:57.754 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 10:25:57.765 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 10:27:13.904 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 10:27:13.986 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 10:27:14.049 PM] Assembly-CSharp.dll compilation finished in 145ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.15.2019 10:27:14.062 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 10:27:14.073 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 10:29:13.703 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 10:29:13.777 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 10:29:13.837 PM] Assembly-CSharp.dll compilation finished in 135ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.15.2019 10:29:13.849 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 10:29:13.860 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 10:32:38.040 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 10:32:38.133 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 10:32:38.194 PM] Assembly-CSharp.dll compilation finished in 154ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.15.2019 10:32:38.206 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 10:32:38.218 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 10:35:59.783 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 10:35:59.866 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 10:35:59.929 PM] Assembly-CSharp.dll compilation finished in 145ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.15.2019 10:35:59.941 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 10:35:59.952 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 10:38:16.737 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 10:38:16.811 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 10:38:16.874 PM] Assembly-CSharp.dll compilation finished in 136ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.15.2019 10:38:16.886 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 10:38:16.898 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 10:39:21.554 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 10:39:21.632 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 10:39:21.692 PM] Assembly-CSharp.dll compilation finished in 137ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.15.2019 10:39:21.704 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 10:39:21.715 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 10:44:30.774 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 10:44:30.853 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 10:44:30.921 PM] Assembly-CSharp.dll compilation finished in 147ms  source files re-parsed: 2 metadata reloaded: 0
- (0,0): [02.15.2019 10:44:30.933 PM] Assembly-CSharp.dll: compilation was cached, 2 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 10:44:30.945 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 10:44:58.709 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 10:44:58.790 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 10:44:58.847 PM] Assembly-CSharp.dll compilation finished in 138ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.15.2019 10:44:58.859 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 10:44:58.871 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 10:47:43.791 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 10:47:43.885 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 10:47:43.950 PM] Assembly-CSharp.dll compilation finished in 159ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.15.2019 10:47:43.962 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 10:47:43.974 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 10:56:20.316 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 10:56:20.409 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 10:56:20.479 PM] Assembly-CSharp.dll compilation finished in 162ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.15.2019 10:56:20.492 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 10:56:20.503 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 11:00:53.998 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 11:00:54.060 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 11:00:54.073 PM] Assembly-CSharp.dll compilation finished in 74ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.15.2019 11:00:54.084 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 11:00:54.095 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 11:02:08.412 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 11:02:08.495 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 11:02:08.554 PM] Assembly-CSharp.dll compilation finished in 142ms  source files re-parsed: 2 metadata reloaded: 0
- (0,0): [02.15.2019 11:02:08.567 PM] Assembly-CSharp.dll: compilation was cached, 2 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 11:02:08.578 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 11:10:40.559 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 11:10:40.649 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 11:10:40.713 PM] Assembly-CSharp.dll compilation finished in 155ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.15.2019 11:10:40.725 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 11:10:40.736 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 11:11:41.870 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 11:11:41.955 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 11:11:42.015 PM] Assembly-CSharp.dll compilation finished in 144ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.15.2019 11:11:42.027 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 11:11:42.038 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 11:12:35.310 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 11:12:35.404 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 11:12:35.463 PM] Assembly-CSharp.dll compilation finished in 152ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.15.2019 11:12:35.475 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 11:12:35.486 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 11:19:26.864 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 11:19:26.950 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 11:19:27.017 PM] Assembly-CSharp.dll compilation finished in 153ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.15.2019 11:19:27.029 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 11:19:27.041 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 11:22:13.144 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 11:22:13.225 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 11:22:13.243 PM] Assembly-CSharp.dll compilation finished in 97ms  source files re-parsed: 2 metadata reloaded: 0
- (0,0): [02.15.2019 11:22:13.254 PM] Assembly-CSharp.dll: compilation was cached, 2 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 11:22:13.266 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 11:22:29.021 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 11:22:29.104 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 11:22:29.166 PM] Assembly-CSharp.dll compilation finished in 145ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.15.2019 11:22:29.178 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 11:22:29.190 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 11:24:29.973 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 11:24:30.082 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 11:24:30.151 PM] Assembly-CSharp.dll compilation finished in 177ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.15.2019 11:24:30.163 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 11:24:30.174 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 11:25:10.381 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 11:25:10.462 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 11:25:10.520 PM] Assembly-CSharp.dll compilation finished in 140ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.15.2019 11:25:10.532 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 11:25:10.543 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 11:25:48.450 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 11:25:48.524 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 11:25:48.536 PM] Assembly-CSharp.dll compilation finished in 86ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.15.2019 11:25:48.548 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 11:25:48.559 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 11:27:11.453 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 11:27:11.539 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 11:27:11.601 PM] Assembly-CSharp.dll compilation finished in 148ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.15.2019 11:27:11.613 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 11:27:11.624 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 11:29:52.856 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 11:29:52.934 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 11:29:52.994 PM] Assembly-CSharp.dll compilation finished in 138ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.15.2019 11:29:53.006 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 11:29:53.017 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 11:32:09.275 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 11:32:09.356 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 11:32:09.415 PM] Assembly-CSharp.dll compilation finished in 141ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.15.2019 11:32:09.428 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 11:32:09.439 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 11:33:42.213 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 11:33:42.295 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 11:33:42.357 PM] Assembly-CSharp.dll compilation finished in 143ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.15.2019 11:33:42.369 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 11:33:42.380 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 11:38:06.969 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 11:38:07.049 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 11:38:07.115 PM] Assembly-CSharp.dll compilation finished in 147ms  source files re-parsed: 2 metadata reloaded: 0
- (0,0): [02.15.2019 11:38:07.127 PM] Assembly-CSharp.dll: compilation was cached, 2 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 11:38:07.138 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 11:42:34.558 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 11:42:34.639 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 11:42:34.699 PM] Assembly-CSharp.dll compilation finished in 141ms  source files re-parsed: 3 metadata reloaded: 0
- (0,0): [02.15.2019 11:42:34.711 PM] Assembly-CSharp.dll: compilation was cached, 3 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 11:42:34.722 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 11:51:24.913 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 11:51:24.995 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 11:51:25.056 PM] Assembly-CSharp.dll compilation finished in 142ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.15.2019 11:51:25.068 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 11:51:25.080 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 11:52:57.511 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 11:52:57.604 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 11:52:57.669 PM] Assembly-CSharp.dll compilation finished in 157ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.15.2019 11:52:57.681 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 11:52:57.693 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.15.2019 11:56:30.539 PM] Assembly-CSharp.dll compiling...
- (0,0): [02.15.2019 11:56:30.616 PM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.15.2019 11:56:30.676 PM] Assembly-CSharp.dll compilation finished in 137ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.15.2019 11:56:30.688 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.15.2019 11:56:30.700 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.16.2019 12:03:15.901 AM] Assembly-CSharp.dll compiling...
- (0,0): [02.16.2019 12:03:15.982 AM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.16.2019 12:03:16.047 AM] Assembly-CSharp.dll compilation finished in 146ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.16.2019 12:03:16.059 AM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.16.2019 12:03:16.070 AM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.16.2019 12:19:47.559 AM] Assembly-CSharp.dll compiling...
- (0,0): [02.16.2019 12:19:47.635 AM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.16.2019 12:19:47.697 AM] Assembly-CSharp.dll compilation finished in 137ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.16.2019 12:19:47.709 AM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.16.2019 12:19:47.720 AM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.16.2019 12:21:41.525 AM] Assembly-CSharp.dll compiling...
- (0,0): [02.16.2019 12:21:41.604 AM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.16.2019 12:21:41.664 AM] Assembly-CSharp.dll compilation finished in 140ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.16.2019 12:21:41.676 AM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.16.2019 12:21:41.687 AM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.16.2019 12:22:12.252 AM] Assembly-CSharp.dll compiling...
- (0,0): [02.16.2019 12:22:12.338 AM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.16.2019 12:22:12.409 AM] Assembly-CSharp.dll compilation finished in 156ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.16.2019 12:22:12.421 AM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.16.2019 12:22:12.432 AM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.16.2019 12:27:37.168 AM] Assembly-CSharp.dll compiling...
- (0,0): [02.16.2019 12:27:37.245 AM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.16.2019 12:27:37.307 AM] Assembly-CSharp.dll compilation finished in 139ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.16.2019 12:27:37.319 AM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.16.2019 12:27:37.330 AM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.16.2019 12:28:15.418 AM] Assembly-CSharp.dll compiling...
- (0,0): [02.16.2019 12:28:15.502 AM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.16.2019 12:28:15.562 AM] Assembly-CSharp.dll compilation finished in 144ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.16.2019 12:28:15.574 AM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.16.2019 12:28:15.585 AM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.16.2019 12:32:52.178 AM] Assembly-CSharp.dll compiling...
- (0,0): [02.16.2019 12:32:52.264 AM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.16.2019 12:32:52.334 AM] Assembly-CSharp.dll compilation finished in 157ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.16.2019 12:32:52.346 AM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.16.2019 12:32:52.358 AM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.16.2019 12:34:22.902 AM] Assembly-CSharp.dll compiling...
- (0,0): [02.16.2019 12:34:23.003 AM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
- (0,0): [02.16.2019 12:34:23.075 AM] Assembly-CSharp.dll compilation finished in 172ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [02.16.2019 12:34:23.086 AM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 10260
- (0,0): [02.16.2019 12:34:23.097 AM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10260
- (0,0): [02.16.2019 12:34:31.750 AM] watchdog triggered an exit
+ (0,0): [02.17.2019 12:08:31.467 AM] Unity incremental compiler server
+ (0,0): [02.17.2019 12:08:31.557 AM] watchdog active on pid: 2232
+ (0,0): [02.17.2019 12:08:33.150 AM] Unity.Mathematics.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:33.164 AM] Unity.Mathematics.dll compiling...
+ (0,0): [02.17.2019 12:08:33.195 AM] Unity.Analytics.DataPrivacy.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:33.206 AM] Unity.Analytics.DataPrivacy.dll compiling...
+ (0,0): [02.17.2019 12:08:33.449 AM] Unity.TextMeshPro.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:33.470 AM] Unity.Properties.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:33.479 AM] Unity.TextMeshPro.dll compiling...
+ (0,0): [02.17.2019 12:08:33.467 AM] Unity.Entities.StaticTypeRegistry.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:33.483 AM] Unity.Properties.dll compiling...
+ (0,0): [02.17.2019 12:08:33.482 AM] Unity.Burst.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:33.493 AM] Unity.Entities.StaticTypeRegistry.dll compiling...
+ (0,0): [02.17.2019 12:08:33.504 AM] Unity.Burst.dll compiling...
+ (0,0): [02.17.2019 12:08:33.591 AM] Unity.PackageManagerUI.Editor.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:33.612 AM] Unity.PackageManagerUI.Editor.dll compiling...
+ (0,0): [02.17.2019 12:08:33.653 AM] Unity.CollabProxy.Editor.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:33.666 AM] Unity.CollabProxy.Editor.dll compiling...
+ (0,0): [02.17.2019 12:08:35.764 AM] Unity.Burst.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Burst.dll
+ (0,0): [02.17.2019 12:08:35.765 AM] Unity.CollabProxy.Editor.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.CollabProxy.Editor.dll
+ (0,0): [02.17.2019 12:08:35.766 AM] Unity.Analytics.DataPrivacy.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Analytics.DataPrivacy.dll
+ (0,0): [02.17.2019 12:08:35.765 AM] Unity.Properties.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Properties.dll
+ (0,0): [02.17.2019 12:08:35.766 AM] Unity.PackageManagerUI.Editor.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.PackageManagerUI.Editor.dll
+ (0,0): [02.17.2019 12:08:35.764 AM] Unity.Entities.StaticTypeRegistry.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Entities.StaticTypeRegistry.dll
+ (0,0): [02.17.2019 12:08:35.828 AM] Unity.Analytics.DataPrivacy.dll compilation finished in 2623ms  source files re-parsed: 3 metadata reloaded: 71
+ (0,0): [02.17.2019 12:08:35.840 AM] Unity.Analytics.DataPrivacy.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:35.843 AM] Unity.Entities.StaticTypeRegistry.dll compilation finished in 2350ms  source files re-parsed: 2 metadata reloaded: 0
+ (0,0): [02.17.2019 12:08:35.855 AM] Unity.Entities.StaticTypeRegistry.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:35.884 AM] Unity.Burst.dll compilation finished in 2380ms  source files re-parsed: 4 metadata reloaded: 0
+ (0,0): [02.17.2019 12:08:35.884 AM] Unity.CollabProxy.Editor.dll compilation finished in 2219ms  source files re-parsed: 17 metadata reloaded: 0
+ (0,0): [02.17.2019 12:08:35.902 AM] Unity.PackageManagerUI.Editor.dll compilation finished in 2290ms  source files re-parsed: 52 metadata reloaded: 1
+ (0,0): [02.17.2019 12:08:35.884 AM] Unity.Properties.dll compilation finished in 2402ms  source files re-parsed: 34 metadata reloaded: 0
+ (0,0): [02.17.2019 12:08:35.897 AM] Unity.Burst.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:35.924 AM] Unity.Properties.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:35.910 AM] Unity.CollabProxy.Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:35.922 AM] Unity.PackageManagerUI.Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:36.462 AM] Unity.Properties.Editor.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:36.474 AM] Unity.Properties.Editor.dll compiling...
+ (0,0): [02.17.2019 12:08:36.618 AM] Unity.Burst.Editor.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:36.654 AM] Unity.Burst.Editor.dll compiling...
+ (0,0): [02.17.2019 12:08:36.686 AM] Unity.TextMeshPro.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.TextMeshPro.dll
+ (0,0): [02.17.2019 12:08:36.692 AM] Unity.Properties.Codegen.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:36.719 AM] Unity.Properties.Codegen.dll compiling...
+ (0,0): [02.17.2019 12:08:36.736 AM] Unity.Properties.Editor.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Properties.Editor.dll
+ (0,0): [02.17.2019 12:08:36.763 AM] Unity.Burst.Editor.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Burst.Editor.dll
+ (0,0): [02.17.2019 12:08:36.808 AM] Unity.Properties.Codegen.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Properties.Codegen.dll
+ (0,0): [02.17.2019 12:08:36.817 AM] Unity.TextMeshPro.dll compilation finished in 3338ms  source files re-parsed: 45 metadata reloaded: 0
+ (0,0): [02.17.2019 12:08:36.828 AM] Unity.Burst.Editor.dll compilation finished in 174ms  source files re-parsed: 10 metadata reloaded: 1
+ (0,0): [02.17.2019 12:08:36.836 AM] Unity.Properties.Editor.dll compilation finished in 362ms  source files re-parsed: 23 metadata reloaded: 1
+ (0,0): [02.17.2019 12:08:36.829 AM] Unity.TextMeshPro.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:36.848 AM] Unity.Properties.Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:36.840 AM] Unity.Burst.Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:36.859 AM] Unity.Properties.Codegen.dll compilation finished in 139ms  source files re-parsed: 7 metadata reloaded: 0
+ (0,0): [02.17.2019 12:08:36.870 AM] Unity.Properties.Codegen.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:37.162 AM] Unity.Mathematics.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Mathematics.dll
+ (0,0): [02.17.2019 12:08:37.200 AM] Unity.TextMeshPro.Editor.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:37.212 AM] Unity.TextMeshPro.Editor.dll compiling...
+ (0,0): [02.17.2019 12:08:37.244 AM] Unity.Mathematics.dll compilation finished in 4079ms  source files re-parsed: 82 metadata reloaded: 215
+ (0,0): [02.17.2019 12:08:37.256 AM] Unity.Mathematics.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:37.399 AM] Unity.TextMeshPro.Editor.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.TextMeshPro.Editor.dll
+ (0,0): [02.17.2019 12:08:37.514 AM] Unity.TextMeshPro.Editor.dll compilation finished in 302ms  source files re-parsed: 40 metadata reloaded: 1
+ (0,0): [02.17.2019 12:08:37.526 AM] Unity.TextMeshPro.Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:37.840 AM] Unity.Collections.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:37.852 AM] Unity.Collections.dll compiling...
+ (0,0): [02.17.2019 12:08:37.934 AM] Unity.Mathematics.Editor.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:37.935 AM] Unity.Collections.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Collections.dll
+ (0,0): [02.17.2019 12:08:37.946 AM] Unity.Mathematics.Editor.dll compiling...
+ (0,0): [02.17.2019 12:08:37.995 AM] Unity.Collections.dll compilation finished in 144ms  source files re-parsed: 13 metadata reloaded: 1
+ (0,0): [02.17.2019 12:08:37.995 AM] Unity.Mathematics.Editor.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Mathematics.Editor.dll
+ (0,0): [02.17.2019 12:08:38.007 AM] Unity.Collections.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:38.060 AM] Unity.Mathematics.Editor.dll compilation finished in 115ms  source files re-parsed: 4 metadata reloaded: 0
+ (0,0): [02.17.2019 12:08:38.072 AM] Unity.Mathematics.Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:38.234 AM] Unity.Entities.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:38.246 AM] Unity.Entities.dll compiling...
+ (0,0): [02.17.2019 12:08:38.420 AM] Unity.Jobs.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:38.496 AM] Unity.Jobs.dll compiling...
+ (0,0): [02.17.2019 12:08:38.643 AM] Unity.Collections.Tests.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:38.655 AM] Unity.Collections.Tests.dll compiling...
+ (0,0): [02.17.2019 12:08:38.658 AM] Unity.Jobs.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Jobs.dll
+ (0,0): [02.17.2019 12:08:38.705 AM] Unity.Jobs.dll compilation finished in 209ms  source files re-parsed: 3 metadata reloaded: 0
+ (0,0): [02.17.2019 12:08:38.717 AM] Unity.Jobs.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:38.772 AM] Unity.Collections.Tests.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Collections.Tests.dll
+ (0,0): [02.17.2019 12:08:38.872 AM] Unity.Collections.Tests.dll compilation finished in 217ms  source files re-parsed: 17 metadata reloaded: 0
+ (0,0): [02.17.2019 12:08:38.883 AM] Unity.Collections.Tests.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:38.930 AM] Unity.Entities.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Entities.dll
+ (0,0): [02.17.2019 12:08:38.991 AM] Unity.Jobs.Tests.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:39.003 AM] Unity.Jobs.Tests.dll compiling...
+ (0,0): [02.17.2019 12:08:39.031 AM] Unity.Entities.dll compilation finished in 785ms  source files re-parsed: 63 metadata reloaded: 2
+ (0,0): [02.17.2019 12:08:39.039 AM] Unity.Jobs.Tests.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Jobs.Tests.dll
+ (0,0): [02.17.2019 12:08:39.043 AM] Unity.Entities.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:39.077 AM] Unity.Jobs.Tests.dll compilation finished in 73ms  source files re-parsed: 2 metadata reloaded: 1
+ (0,0): [02.17.2019 12:08:39.088 AM] Unity.Jobs.Tests.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:39.094 AM] Unity.Jobs.Editor.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:39.106 AM] Unity.Jobs.Editor.dll compiling...
+ (0,0): [02.17.2019 12:08:39.130 AM] Unity.Jobs.Editor.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Jobs.Editor.dll
+ (0,0): [02.17.2019 12:08:39.163 AM] Unity.Jobs.Editor.dll compilation finished in 56ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [02.17.2019 12:08:39.175 AM] Unity.Jobs.Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:39.205 AM] Unity.Burst.Tests.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:39.217 AM] Unity.Burst.Tests.dll compiling...
+ (0,0): [02.17.2019 12:08:39.253 AM] Unity.Burst.Tests.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Burst.Tests.dll
+ (0,0): [02.17.2019 12:08:39.291 AM] Unity.Burst.Tests.dll compilation finished in 74ms  source files re-parsed: 2 metadata reloaded: 0
+ (0,0): [02.17.2019 12:08:39.295 AM] Unity.Entities.Hybrid.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:39.302 AM] Unity.Burst.Tests.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:39.307 AM] Unity.Entities.Hybrid.dll compiling...
+ (0,0): [02.17.2019 12:08:39.359 AM] Unity.Entities.Hybrid.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Entities.Hybrid.dll
+ (0,0): [02.17.2019 12:08:39.406 AM] Unity.Entities.Hybrid.dll compilation finished in 98ms  source files re-parsed: 22 metadata reloaded: 1
+ (0,0): [02.17.2019 12:08:39.418 AM] Unity.Entities.Hybrid.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:39.609 AM] Unity.Transforms.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:39.621 AM] Unity.Transforms.dll compiling...
+ (0,0): [02.17.2019 12:08:39.690 AM] Unity.Transforms.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Transforms.dll
+ (0,0): [02.17.2019 12:08:39.717 AM] Unity.Entities.TestComponents.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:39.728 AM] Unity.Entities.TestComponents.dll compiling...
+ (0,0): [02.17.2019 12:08:39.736 AM] Unity.Transforms.dll compilation finished in 116ms  source files re-parsed: 9 metadata reloaded: 1
+ (0,0): [02.17.2019 12:08:39.748 AM] Unity.Transforms.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:39.750 AM] Unity.Entities.TestComponents.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Entities.TestComponents.dll
+ (0,0): [02.17.2019 12:08:39.780 AM] Unity.Entities.TestComponents.dll compilation finished in 52ms  source files re-parsed: 3 metadata reloaded: 0
+ (0,0): [02.17.2019 12:08:39.791 AM] Unity.Entities.TestComponents.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:40.019 AM] Unity.Entities.Properties.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:40.031 AM] Unity.Entities.Properties.dll compiling...
+ (0,0): [02.17.2019 12:08:40.080 AM] Unity.Entities.Properties.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Entities.Properties.dll
+ (0,0): [02.17.2019 12:08:40.127 AM] Unity.Transforms.Hybrid.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:40.131 AM] Unity.Entities.Properties.dll compilation finished in 100ms  source files re-parsed: 14 metadata reloaded: 1
+ (0,0): [02.17.2019 12:08:40.139 AM] Unity.Transforms.Hybrid.dll compiling...
+ (0,0): [02.17.2019 12:08:40.143 AM] Unity.Entities.Properties.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:40.171 AM] Unity.Transforms.Hybrid.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Transforms.Hybrid.dll
+ (0,0): [02.17.2019 12:08:40.224 AM] Unity.Entities.Tests.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:40.225 AM] Unity.Transforms.Hybrid.dll compilation finished in 85ms  source files re-parsed: 7 metadata reloaded: 0
+ (0,0): [02.17.2019 12:08:40.238 AM] Unity.Entities.Tests.dll compiling...
+ (0,0): [02.17.2019 12:08:40.249 AM] Unity.Transforms.Hybrid.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:40.411 AM] Unity.Entities.Editor.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:40.423 AM] Unity.Entities.Editor.dll compiling...
+ (0,0): [02.17.2019 12:08:40.531 AM] Unity.Entities.Properties.Tests.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:40.565 AM] Unity.Entities.Properties.Tests.dll compiling...
+ (0,0): [02.17.2019 12:08:40.602 AM] Unity.Entities.Editor.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Entities.Editor.dll
+ (0,0): [02.17.2019 12:08:40.606 AM] Unity.Entities.Tests.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Entities.Tests.dll
+ (0,0): [02.17.2019 12:08:40.614 AM] Unity.Entities.Properties.Tests.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Entities.Properties.Tests.dll
+ (0,0): [02.17.2019 12:08:40.641 AM] Unity.Entities.Properties.Tests.dll compilation finished in 76ms  source files re-parsed: 2 metadata reloaded: 0
+ (0,0): [02.17.2019 12:08:40.652 AM] Unity.Entities.Properties.Tests.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:40.664 AM] Unity.Entities.Editor.dll compilation finished in 241ms  source files re-parsed: 29 metadata reloaded: 1
+ (0,0): [02.17.2019 12:08:40.676 AM] Unity.Entities.Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:40.719 AM] Unity.Entities.Tests.dll compilation finished in 482ms  source files re-parsed: 48 metadata reloaded: 0
+ (0,0): [02.17.2019 12:08:40.731 AM] Unity.Entities.Tests.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:40.802 AM] Unity.Transforms.Editor.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:40.814 AM] Unity.Transforms.Editor.dll compiling...
+ (0,0): [02.17.2019 12:08:40.844 AM] Unity.Transforms.Editor.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Transforms.Editor.dll
+ (0,0): [02.17.2019 12:08:40.874 AM] Unity.Transforms.Editor.dll compilation finished in 60ms  source files re-parsed: 1 metadata reloaded: 2
+ (0,0): [02.17.2019 12:08:40.886 AM] Unity.Transforms.Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:40.910 AM] Unity.Entities.Editor.Tests.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:40.922 AM] Unity.Entities.Editor.Tests.dll compiling...
+ (0,0): [02.17.2019 12:08:40.955 AM] Unity.Entities.Editor.Tests.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Entities.Editor.Tests.dll
+ (0,0): [02.17.2019 12:08:40.995 AM] Unity.Entities.Editor.Tests.dll compilation finished in 74ms  source files re-parsed: 5 metadata reloaded: 1
+ (0,0): [02.17.2019 12:08:41.001 AM] Unity.Entities.Hybrid.Tests.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:41.007 AM] Unity.Entities.Editor.Tests.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:41.013 AM] Unity.Entities.Hybrid.Tests.dll compiling...
+ (0,0): [02.17.2019 12:08:41.060 AM] Unity.Entities.Hybrid.Tests.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Entities.Hybrid.Tests.dll
+ (0,0): [02.17.2019 12:08:41.099 AM] Unity.Transforms.Tests.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:41.111 AM] Unity.Transforms.Tests.dll compiling...
+ (0,0): [02.17.2019 12:08:41.118 AM] Unity.Entities.Hybrid.Tests.dll compilation finished in 105ms  source files re-parsed: 13 metadata reloaded: 1
+ (0,0): [02.17.2019 12:08:41.130 AM] Unity.Entities.Hybrid.Tests.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:41.152 AM] Unity.Transforms.Tests.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Transforms.Tests.dll
+ (0,0): [02.17.2019 12:08:41.191 AM] Unity.Transforms.Tests.dll compilation finished in 79ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [02.17.2019 12:08:41.203 AM] Unity.Transforms.Tests.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:43.984 AM] Assembly-CSharp.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:43.996 AM] Assembly-CSharp.dll compiling...
+ (0,0): [02.17.2019 12:08:44.127 AM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
+ (0,0): [02.17.2019 12:08:44.191 AM] Assembly-CSharp.dll compilation finished in 195ms  source files re-parsed: 12 metadata reloaded: 10
+ (0,0): [02.17.2019 12:08:44.204 AM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:48.743 AM] Unity.TextMeshPro.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:48.755 AM] Unity.TextMeshPro.dll compiling...
+ (0,0): [02.17.2019 12:08:48.866 AM] Unity.Mathematics.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:48.881 AM] Unity.Mathematics.dll compiling...
+ (0,0): [02.17.2019 12:08:48.905 AM] Unity.Analytics.DataPrivacy.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:49.023 AM] Unity.Analytics.DataPrivacy.dll compiling...
+ (0,0): [02.17.2019 12:08:49.232 AM] Unity.Entities.StaticTypeRegistry.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:49.328 AM] Unity.Entities.StaticTypeRegistry.dll compiling...
+ (0,0): [02.17.2019 12:08:49.474 AM] Unity.Analytics.DataPrivacy.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Analytics.DataPrivacy.dll
+ (0,0): [02.17.2019 12:08:49.481 AM] Unity.Properties.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:49.502 AM] Unity.Properties.dll compiling...
+ (0,0): [02.17.2019 12:08:49.503 AM] Unity.Entities.StaticTypeRegistry.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Entities.StaticTypeRegistry.dll
+ (0,0): [02.17.2019 12:08:49.517 AM] Unity.Burst.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:49.543 AM] Unity.Analytics.DataPrivacy.dll compilation finished in 520ms  source files re-parsed: 3 metadata reloaded: 0
+ (0,0): [02.17.2019 12:08:49.547 AM] Unity.Burst.dll compiling...
+ (0,0): [02.17.2019 12:08:49.558 AM] Unity.Analytics.DataPrivacy.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:49.543 AM] Unity.Entities.StaticTypeRegistry.dll compilation finished in 214ms  source files re-parsed: 2 metadata reloaded: 0
+ (0,0): [02.17.2019 12:08:49.581 AM] Unity.TextMeshPro.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.TextMeshPro.dll
+ (0,0): [02.17.2019 12:08:49.591 AM] Unity.Entities.StaticTypeRegistry.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:49.594 AM] Unity.Burst.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Burst.dll
+ (0,0): [02.17.2019 12:08:49.602 AM] Unity.PackageManagerUI.Editor.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:49.631 AM] Unity.PackageManagerUI.Editor.dll compiling...
+ (0,0): [02.17.2019 12:08:49.641 AM] Unity.Burst.dll compilation finished in 95ms  source files re-parsed: 4 metadata reloaded: 0
+ (0,0): [02.17.2019 12:08:49.658 AM] Unity.CollabProxy.Editor.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:49.663 AM] Unity.Burst.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:49.671 AM] Unity.CollabProxy.Editor.dll compiling...
+ (0,0): [02.17.2019 12:08:49.793 AM] Unity.TextMeshPro.dll compilation finished in 1038ms  source files re-parsed: 45 metadata reloaded: 0
+ (0,0): [02.17.2019 12:08:49.836 AM] Unity.TextMeshPro.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:50.191 AM] Unity.CollabProxy.Editor.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.CollabProxy.Editor.dll
+ (0,0): [02.17.2019 12:08:50.192 AM] Unity.Properties.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Properties.dll
+ (0,0): [02.17.2019 12:08:50.251 AM] Unity.PackageManagerUI.Editor.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.PackageManagerUI.Editor.dll
+ (0,0): [02.17.2019 12:08:50.295 AM] Unity.Properties.dll compilation finished in 792ms  source files re-parsed: 34 metadata reloaded: 0
+ (0,0): [02.17.2019 12:08:50.298 AM] Unity.CollabProxy.Editor.dll compilation finished in 626ms  source files re-parsed: 17 metadata reloaded: 0
+ (0,0): [02.17.2019 12:08:50.307 AM] Unity.Properties.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:50.309 AM] Unity.CollabProxy.Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:50.324 AM] Unity.PackageManagerUI.Editor.dll compilation finished in 693ms  source files re-parsed: 52 metadata reloaded: 0
+ (0,0): [02.17.2019 12:08:50.335 AM] Unity.PackageManagerUI.Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:50.635 AM] Unity.Burst.Editor.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:50.647 AM] Unity.Burst.Editor.dll compiling...
+ (0,0): [02.17.2019 12:08:50.714 AM] Unity.Burst.Editor.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Burst.Editor.dll
+ (0,0): [02.17.2019 12:08:50.762 AM] Unity.Properties.Editor.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:50.774 AM] Unity.Properties.Editor.dll compiling...
+ (0,0): [02.17.2019 12:08:50.784 AM] Unity.Burst.Editor.dll compilation finished in 138ms  source files re-parsed: 10 metadata reloaded: 1
+ (0,0): [02.17.2019 12:08:50.798 AM] Unity.Burst.Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:50.862 AM] Unity.TextMeshPro.Editor.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:50.873 AM] Unity.Properties.Editor.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Properties.Editor.dll
+ (0,0): [02.17.2019 12:08:50.874 AM] Unity.TextMeshPro.Editor.dll compiling...
+ (0,0): [02.17.2019 12:08:50.979 AM] Unity.Properties.Editor.dll compilation finished in 205ms  source files re-parsed: 23 metadata reloaded: 1
+ (0,0): [02.17.2019 12:08:50.996 AM] Unity.Properties.Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:51.001 AM] Unity.Properties.Codegen.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:51.020 AM] Unity.Properties.Codegen.dll compiling...
+ (0,0): [02.17.2019 12:08:51.091 AM] Unity.Properties.Codegen.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Properties.Codegen.dll
+ (0,0): [02.17.2019 12:08:51.118 AM] Unity.TextMeshPro.Editor.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.TextMeshPro.Editor.dll
+ (0,0): [02.17.2019 12:08:51.154 AM] Unity.Properties.Codegen.dll compilation finished in 133ms  source files re-parsed: 7 metadata reloaded: 0
+ (0,0): [02.17.2019 12:08:51.161 AM] Unity.Mathematics.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Mathematics.dll
+ (0,0): [02.17.2019 12:08:51.166 AM] Unity.Properties.Codegen.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:51.249 AM] Unity.Mathematics.dll compilation finished in 2367ms  source files re-parsed: 82 metadata reloaded: 0
+ (0,0): [02.17.2019 12:08:51.255 AM] Unity.TextMeshPro.Editor.dll compilation finished in 382ms  source files re-parsed: 40 metadata reloaded: 1
+ (0,0): [02.17.2019 12:08:51.261 AM] Unity.Mathematics.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:51.267 AM] Unity.TextMeshPro.Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:51.545 AM] Unity.Collections.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:51.556 AM] Unity.Collections.dll compiling...
+ (0,0): [02.17.2019 12:08:51.630 AM] Unity.Collections.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Collections.dll
+ (0,0): [02.17.2019 12:08:51.638 AM] Unity.Mathematics.Editor.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:51.650 AM] Unity.Mathematics.Editor.dll compiling...
+ (0,0): [02.17.2019 12:08:51.717 AM] Unity.Mathematics.Editor.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Mathematics.Editor.dll
+ (0,0): [02.17.2019 12:08:51.719 AM] Unity.Collections.dll compilation finished in 163ms  source files re-parsed: 13 metadata reloaded: 1
+ (0,0): [02.17.2019 12:08:51.731 AM] Unity.Collections.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:51.756 AM] Unity.Mathematics.Editor.dll compilation finished in 106ms  source files re-parsed: 4 metadata reloaded: 0
+ (0,0): [02.17.2019 12:08:51.768 AM] Unity.Mathematics.Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:51.961 AM] Unity.Entities.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:51.973 AM] Unity.Entities.dll compiling...
+ (0,0): [02.17.2019 12:08:52.114 AM] Unity.Jobs.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:52.133 AM] Unity.Jobs.dll compiling...
+ (0,0): [02.17.2019 12:08:52.180 AM] Unity.Collections.Tests.dll compiling...
+ (0,0): [02.17.2019 12:08:52.207 AM] Unity.Jobs.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Jobs.dll
+ (0,0): [02.17.2019 12:08:52.253 AM] Unity.Jobs.dll compilation finished in 118ms  source files re-parsed: 3 metadata reloaded: 0
+ (0,0): [02.17.2019 12:08:52.265 AM] Unity.Jobs.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:52.348 AM] Unity.Collections.Tests.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Collections.Tests.dll
+ (0,0): [02.17.2019 12:08:52.413 AM] Unity.Collections.Tests.dll compilation finished in 233ms  source files re-parsed: 0 metadata reloaded: 0
+ (0,0): [02.17.2019 12:08:52.425 AM] Unity.Collections.Tests.dll: compilation was cached, 0 file(s) were found to have changed. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:52.442 AM] Unity.Collections.Tests.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:52.457 AM] Unity.Entities.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Entities.dll
+ (0,0): [02.17.2019 12:08:52.529 AM] Unity.Jobs.Tests.dll compiling...
+ (0,0): [02.17.2019 12:08:52.559 AM] Unity.Jobs.Tests.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Jobs.Tests.dll
+ (0,0): [02.17.2019 12:08:52.581 AM] Unity.Entities.dll compilation finished in 608ms  source files re-parsed: 63 metadata reloaded: 2
+ (0,0): [02.17.2019 12:08:52.592 AM] Unity.Jobs.Tests.dll compilation finished in 63ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [02.17.2019 12:08:52.593 AM] Unity.Entities.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:52.604 AM] Unity.Jobs.Tests.dll: compilation was cached, 0 file(s) were found to have changed. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:52.615 AM] Unity.Jobs.Tests.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:52.631 AM] Unity.Jobs.Editor.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:52.643 AM] Unity.Jobs.Editor.dll compiling...
+ (0,0): [02.17.2019 12:08:52.664 AM] Unity.Jobs.Editor.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Jobs.Editor.dll
+ (0,0): [02.17.2019 12:08:52.691 AM] Unity.Jobs.Editor.dll compilation finished in 48ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [02.17.2019 12:08:52.702 AM] Unity.Jobs.Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:52.721 AM] Unity.Burst.Tests.dll compiling...
+ (0,0): [02.17.2019 12:08:52.750 AM] Unity.Burst.Tests.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Burst.Tests.dll
+ (0,0): [02.17.2019 12:08:52.776 AM] Unity.Burst.Tests.dll compilation finished in 54ms  source files re-parsed: 0 metadata reloaded: 0
+ (0,0): [02.17.2019 12:08:52.788 AM] Unity.Burst.Tests.dll: compilation was cached, 0 file(s) were found to have changed. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:52.800 AM] Unity.Burst.Tests.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:53.452 AM] Unity.Entities.Hybrid.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:53.464 AM] Unity.Entities.Hybrid.dll compiling...
+ (0,0): [02.17.2019 12:08:53.510 AM] Unity.Entities.Hybrid.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Entities.Hybrid.dll
+ (0,0): [02.17.2019 12:08:53.557 AM] Unity.Entities.Hybrid.dll compilation finished in 92ms  source files re-parsed: 22 metadata reloaded: 1
+ (0,0): [02.17.2019 12:08:53.568 AM] Unity.Entities.Hybrid.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:54.188 AM] Unity.Transforms.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:54.200 AM] Unity.Transforms.dll compiling...
+ (0,0): [02.17.2019 12:08:54.267 AM] Unity.Entities.TestComponents.dll compiling...
+ (0,0): [02.17.2019 12:08:54.272 AM] Unity.Transforms.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Transforms.dll
+ (0,0): [02.17.2019 12:08:54.289 AM] Unity.Entities.TestComponents.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Entities.TestComponents.dll
+ (0,0): [02.17.2019 12:08:54.317 AM] Unity.Entities.TestComponents.dll compilation finished in 49ms  source files re-parsed: 0 metadata reloaded: 0
+ (0,0): [02.17.2019 12:08:54.318 AM] Unity.Transforms.dll compilation finished in 118ms  source files re-parsed: 9 metadata reloaded: 1
+ (0,0): [02.17.2019 12:08:54.328 AM] Unity.Entities.TestComponents.dll: compilation was cached, 0 file(s) were found to have changed. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:54.330 AM] Unity.Transforms.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:54.340 AM] Unity.Entities.TestComponents.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:55.178 AM] Unity.Entities.Properties.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:55.189 AM] Unity.Entities.Properties.dll compiling...
+ (0,0): [02.17.2019 12:08:55.243 AM] Unity.Entities.Properties.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Entities.Properties.dll
+ (0,0): [02.17.2019 12:08:55.278 AM] Unity.Transforms.Hybrid.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:55.287 AM] Unity.Entities.Properties.dll compilation finished in 99ms  source files re-parsed: 14 metadata reloaded: 1
+ (0,0): [02.17.2019 12:08:55.290 AM] Unity.Transforms.Hybrid.dll compiling...
+ (0,0): [02.17.2019 12:08:55.299 AM] Unity.Entities.Properties.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:55.319 AM] Unity.Transforms.Hybrid.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Transforms.Hybrid.dll
+ (0,0): [02.17.2019 12:08:55.357 AM] Unity.Transforms.Hybrid.dll compilation finished in 67ms  source files re-parsed: 7 metadata reloaded: 0
+ (0,0): [02.17.2019 12:08:55.368 AM] Unity.Transforms.Hybrid.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:55.386 AM] Unity.Entities.Tests.dll compiling...
+ (0,0): [02.17.2019 12:08:55.587 AM] Unity.Entities.Tests.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Entities.Tests.dll
+ (0,0): [02.17.2019 12:08:55.686 AM] Unity.Entities.Tests.dll compilation finished in 299ms  source files re-parsed: 0 metadata reloaded: 0
+ (0,0): [02.17.2019 12:08:55.697 AM] Unity.Entities.Tests.dll: compilation was cached, 0 file(s) were found to have changed. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:55.708 AM] Unity.Entities.Tests.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:55.972 AM] Unity.Entities.Editor.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:55.984 AM] Unity.Entities.Editor.dll compiling...
+ (0,0): [02.17.2019 12:08:56.074 AM] Unity.Entities.Properties.Tests.dll compiling...
+ (0,0): [02.17.2019 12:08:56.120 AM] Unity.Entities.Properties.Tests.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Entities.Properties.Tests.dll
+ (0,0): [02.17.2019 12:08:56.128 AM] Unity.Entities.Editor.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Entities.Editor.dll
+ (0,0): [02.17.2019 12:08:56.152 AM] Unity.Entities.Properties.Tests.dll compilation finished in 77ms  source files re-parsed: 0 metadata reloaded: 0
+ (0,0): [02.17.2019 12:08:56.163 AM] Unity.Entities.Properties.Tests.dll: compilation was cached, 0 file(s) were found to have changed. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:56.169 AM] Unity.Entities.Hybrid.Tests.dll compiling...
+ (0,0): [02.17.2019 12:08:56.174 AM] Unity.Entities.Properties.Tests.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:56.229 AM] Unity.Entities.Editor.dll compilation finished in 245ms  source files re-parsed: 29 metadata reloaded: 1
+ (0,0): [02.17.2019 12:08:56.237 AM] Unity.Entities.Hybrid.Tests.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Entities.Hybrid.Tests.dll
+ (0,0): [02.17.2019 12:08:56.241 AM] Unity.Entities.Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:56.266 AM] Unity.Transforms.Tests.dll compiling...
+ (0,0): [02.17.2019 12:08:56.288 AM] Unity.Entities.Hybrid.Tests.dll compilation finished in 118ms  source files re-parsed: 0 metadata reloaded: 2
+ (0,0): [02.17.2019 12:08:56.299 AM] Unity.Entities.Hybrid.Tests.dll: compilation was cached, 0 file(s) were found to have changed. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:56.303 AM] Unity.Transforms.Tests.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Transforms.Tests.dll
+ (0,0): [02.17.2019 12:08:56.310 AM] Unity.Entities.Hybrid.Tests.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:56.345 AM] Unity.Transforms.Tests.dll compilation finished in 78ms  source files re-parsed: 0 metadata reloaded: 0
+ (0,0): [02.17.2019 12:08:56.357 AM] Unity.Transforms.Tests.dll: compilation was cached, 0 file(s) were found to have changed. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:56.368 AM] Unity.Transforms.Tests.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:56.965 AM] Unity.Entities.Editor.Tests.dll compiling...
+ (0,0): [02.17.2019 12:08:57.009 AM] Unity.Entities.Editor.Tests.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Entities.Editor.Tests.dll
+ (0,0): [02.17.2019 12:08:57.050 AM] Unity.Entities.Editor.Tests.dll compilation finished in 84ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [02.17.2019 12:08:57.062 AM] Unity.Entities.Editor.Tests.dll: compilation was cached, 0 file(s) were found to have changed. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:57.073 AM] Unity.Entities.Editor.Tests.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:57.076 AM] Unity.Transforms.Editor.dll: no prior compilation found in cache. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:57.088 AM] Unity.Transforms.Editor.dll compiling...
+ (0,0): [02.17.2019 12:08:57.113 AM] Unity.Transforms.Editor.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Transforms.Editor.dll
+ (0,0): [02.17.2019 12:08:57.140 AM] Unity.Transforms.Editor.dll compilation finished in 52ms  source files re-parsed: 1 metadata reloaded: 1
+ (0,0): [02.17.2019 12:08:57.151 AM] Unity.Transforms.Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:08:57.797 AM] Assembly-CSharp.dll compiling...
+ (0,0): [02.17.2019 12:08:57.882 AM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
+ (0,0): [02.17.2019 12:08:57.941 AM] Assembly-CSharp.dll compilation finished in 144ms  source files re-parsed: 0 metadata reloaded: 10
+ (0,0): [02.17.2019 12:08:57.953 AM] Assembly-CSharp.dll: compilation was cached, 0 file(s) were found to have changed. Caller PID: 2232
+ (0,0): [02.17.2019 12:08:57.964 AM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 2232
+ (0,0): [02.17.2019 12:09:14.128 AM] watchdog triggered an exit

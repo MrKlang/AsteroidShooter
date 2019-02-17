@@ -247,8 +247,8 @@ MonoBehaviour:
   RandomSpeedMinNumber: 0.5
   RandomSpeedMaxNumber: 0.7
   camera: {fileID: 1472005996}
-  CellSize: 16
-  Columns: 10
+  CellSize: 32
+  Columns: 5
   SpawnPointsOutsidePlayerFrustrum: []
   SaveExists: 0
 --- !u!1 &772589312

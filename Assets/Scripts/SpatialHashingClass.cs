@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace Assets.Scripts
 {
     public class SpatialHashingClass
     {
-        private Dictionary<int, List<Vector2>> CellsDictionary;
-        private Dictionary<Vector2, List<int>> ObjectsDictionary;
+        private Dictionary<int, List<SimpleGameObject>> CellsDictionary;
+        private Dictionary<SimpleGameObject, List<int>> ObjectsDictionary;
         private int CellSize;
         private int BoundSize;
 
@@ -15,13 +16,13 @@ namespace Assets.Scripts
         {
             BoundSize = fieldSize;
             CellSize = BoundSize / columns;
-            CellsDictionary = new Dictionary<int, List<Vector2>>();
-            ObjectsDictionary = new Dictionary<Vector2, List<int>>();
+            CellsDictionary = new Dictionary<int, List<SimpleGameObject>>();
+            ObjectsDictionary = new Dictionary<SimpleGameObject, List<int>>();
         }
 
-        public void Insert(Vector2 vector, Vector2 obj)
+        public void Insert(SimpleGameObject vector, SimpleGameObject obj)
         {
-            var key = Key(vector);
+            var key = Key(vector.NewPosition);
             if (CellsDictionary.ContainsKey(key) )
             {
                 if (!CellsDictionary[key].Contains(obj))
@@ -31,7 +32,7 @@ namespace Assets.Scripts
             }
             else
             {
-                CellsDictionary.Add(key, new List<Vector2> { obj });
+                CellsDictionary.Add(key, new List<SimpleGameObject> { obj });
             }
 
             if (ObjectsDictionary.ContainsKey(obj))
@@ -47,23 +48,27 @@ namespace Assets.Scripts
             }
         }
 
-        public void UpdateCells(Vector2 vector, Vector2 obj)
+        public void UpdateCells(SimpleGameObject vector, SimpleGameObject obj)
         {
             if (ObjectsDictionary.ContainsKey(obj))
             {
                 for (int i = 0; i < ObjectsDictionary[obj].Count; i++) {
                     if (CellsDictionary.ContainsKey(ObjectsDictionary[obj][i]))
                     {
-                        CellsDictionary[ObjectsDictionary[obj][i]].Remove(obj);
+                        var std = CellsDictionary[ObjectsDictionary[obj][i]].Where(e=>e.NewPosition == vector.OldPosition).FirstOrDefault();
+                        if (std != null)
+                        {
+                            CellsDictionary[ObjectsDictionary[obj][i]].Remove(std);
+                        }
                     }
                 }
             }
             Insert(vector, vector);
         }
 
-        public void Remove(Vector2 vec)
+        public void Remove(SimpleGameObject vec)
         {
-            var key = Key(vec);
+            var key = Key(vec.OldPosition);
             if (ObjectsDictionary.ContainsKey(vec))
             {
                 for (int i = 0; i < ObjectsDictionary[vec].Count; i++)
@@ -93,10 +98,10 @@ namespace Assets.Scripts
                     (Math.Floor(v.y / CellSize)) * (BoundSize/CellSize));
         }
 
-        public List<Vector2> GetNearbyObjectsPosition(Vector2 vector)
+        public List<SimpleGameObject> GetNearbyObjectsPosition(SimpleGameObject vector)
         {
-            var key = Key(vector);
-            return CellsDictionary.ContainsKey(key) ? CellsDictionary[key] : new List<Vector2>();
+            var key = Key(vector.NewPosition);
+            return CellsDictionary.ContainsKey(key) ? CellsDictionary[key] : new List<SimpleGameObject>();
         }
 
         //internal List<Vector2> GetNearbyObjects(Vector2 obj)

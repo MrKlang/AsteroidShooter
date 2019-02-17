@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class AsteroidController : MonoBehaviour
@@ -15,10 +17,20 @@ public class AsteroidController : MonoBehaviour
 
     public SpriteRenderer renderer;
 
+    public readonly Queue<Action> ExecuteOnMainThread = new Queue<Action>();
+
     void Start()
     {
         parent = transform.parent;
         transform.parent = null;
+    }
+
+    private void Update()
+    {
+        if (ExecuteOnMainThread.Count > 0)
+        {
+            ExecuteOnMainThread.Dequeue().Invoke();
+        }
     }
 
     public void Move(Vector2 newPosition)
@@ -33,36 +45,41 @@ public class AsteroidController : MonoBehaviour
     {
         if (VirtualGameObject.HasCollided && !IsRespawning)
         {
-            StartCoroutine(ResetAsteroid(renderer));
+            try
+            {
+                ExecuteOnMainThread.Enqueue(() => {
+                    //StartCoroutine(ResetAsteroid(renderer)); <---------- Object pooling... Kinda wrong to use it here
+                    Destroy(gameObject);
+                });
+            }
+            catch (Exception e)
+            {
+                Debug.LogError("Exception :" + e+ " happended: "+e.StackTrace);
+            }
         }
-    }
-
-    private void OnBecameVisible()
-    {
-        renderer.enabled = true;
     }
 
     private void OnBecameInvisible()
     {
-        renderer.enabled = false;
+        Destroy(gameObject);
     }
 
-    private IEnumerator ResetAsteroid(SpriteRenderer spriteRenderer)
-    {
-        spriteRenderer.enabled = false;
-        transform.parent = parent;
-        IsRespawning = true;
+    //private IEnumerator ResetAsteroid(SpriteRenderer spriteRenderer)
+    //{
+    //    spriteRenderer.enabled = false;
+    //    transform.parent = parent;
+    //    IsRespawning = true;
 
-        transform.localPosition = controller.SpawnPointsOutsidePlayerFrustrum[UnityEngine.Random.Range(0, controller.SpawnPointsOutsidePlayerFrustrum.Count)];
-        VirtualGameObject.OldPosition = transform.localPosition;
-        VirtualGameObject.NewPosition = transform.localPosition;
+    //    transform.localPosition = controller.SpawnPointsOutsidePlayerFrustrum[UnityEngine.Random.Range(0, controller.SpawnPointsOutsidePlayerFrustrum.Count)];
+    //    VirtualGameObject.OldPosition = transform.localPosition;
+    //    VirtualGameObject.NewPosition = transform.localPosition;
 
-        yield return Delay;
+    //    yield return Delay;
 
-        transform.parent = null;
-        spriteRenderer.enabled = true;
-        IsRespawning = false;
+    //    transform.parent = null;
+    //    spriteRenderer.enabled = true;
+    //    IsRespawning = false;
 
-        VirtualGameObject.HasCollided = false;
-    }
+    //    VirtualGameObject.HasCollided = false;
+    //}
 }
