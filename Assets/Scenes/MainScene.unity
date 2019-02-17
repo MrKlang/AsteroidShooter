@@ -248,7 +248,7 @@ MonoBehaviour:
   Columns: 5
   FieldSize: 160
   Points: 0
-  TasksMaxAmount: 256
+  TasksMaxAmount: 16
   RandomMinNumber: -2
   RandomMaxNumber: 2
   RandomSpeedMinNumber: 0.5
