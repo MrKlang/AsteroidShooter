@@ -231,3 +231,64 @@
  (0,0): [02.17.2019 07:32:08.059 PM] Assembly-CSharp.dll compilation finished in 189ms  source files re-parsed: 1 metadata reloaded: 0
  (0,0): [02.17.2019 07:32:08.071 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 8596
  (0,0): [02.17.2019 07:32:08.082 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 8596
+ (0,0): [02.20.2019 11:35:55.320 AM] Unity.PackageManagerUI.Editor.dll: no prior compilation found in cache. Caller PID: 17712
+ (0,0): [02.20.2019 11:35:55.335 AM] Unity.PackageManagerUI.Editor.dll compiling...
+ (0,0): [02.20.2019 11:35:55.359 AM] Unity.CollabProxy.Editor.dll: no prior compilation found in cache. Caller PID: 17712
+ (0,0): [02.20.2019 11:35:55.373 AM] Unity.CollabProxy.Editor.dll compiling...
+ (0,0): [02.20.2019 11:35:55.394 AM] Unity.TextMeshPro.dll: no prior compilation found in cache. Caller PID: 17712
+ (0,0): [02.20.2019 11:35:55.406 AM] Unity.TextMeshPro.dll compiling...
+ (0,0): [02.20.2019 11:35:55.416 AM] Unity.Analytics.DataPrivacy.dll: no prior compilation found in cache. Caller PID: 17712
+ (0,0): [02.20.2019 11:35:55.429 AM] Unity.Analytics.DataPrivacy.dll compiling...
+ (0,0): [02.20.2019 11:36:00.373 AM] Unity.PackageManagerUI.Editor.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.PackageManagerUI.Editor.dll
+ (0,0): [02.20.2019 11:36:00.373 AM] Unity.Analytics.DataPrivacy.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Analytics.DataPrivacy.dll
+ (0,0): [02.20.2019 11:36:00.374 AM] Unity.TextMeshPro.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.TextMeshPro.dll
+ (0,0): [02.20.2019 11:36:00.404 AM] Unity.Analytics.DataPrivacy.dll compilation finished in 4974ms  source files re-parsed: 3 metadata reloaded: 207
+ (0,0): [02.20.2019 11:36:00.373 AM] Unity.CollabProxy.Editor.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.CollabProxy.Editor.dll
+ (0,0): [02.20.2019 11:36:00.416 AM] Unity.Analytics.DataPrivacy.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 17712
+ (0,0): [02.20.2019 11:36:00.510 AM] Unity.PackageManagerUI.Editor.dll compilation finished in 5176ms  source files re-parsed: 52 metadata reloaded: 208
+ (0,0): [02.20.2019 11:36:00.512 AM] Unity.TextMeshPro.dll compilation finished in 5106ms  source files re-parsed: 45 metadata reloaded: 207
+ (0,0): [02.20.2019 11:36:00.511 AM] Unity.CollabProxy.Editor.dll compilation finished in 5138ms  source files re-parsed: 17 metadata reloaded: 208
+ (0,0): [02.20.2019 11:36:00.524 AM] Unity.TextMeshPro.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 17712
+ (0,0): [02.20.2019 11:36:00.522 AM] Unity.PackageManagerUI.Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 17712
+ (0,0): [02.20.2019 11:36:00.533 AM] Unity.CollabProxy.Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 17712
+ (0,0): [02.20.2019 11:36:01.152 AM] Unity.TextMeshPro.Editor.dll: no prior compilation found in cache. Caller PID: 17712
+ (0,0): [02.20.2019 11:36:01.164 AM] Unity.TextMeshPro.Editor.dll compiling...
+ (0,0): [02.20.2019 11:36:01.558 AM] Unity.TextMeshPro.Editor.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.TextMeshPro.Editor.dll
+ (0,0): [02.20.2019 11:36:01.700 AM] Unity.TextMeshPro.Editor.dll compilation finished in 537ms  source files re-parsed: 40 metadata reloaded: 1
+ (0,0): [02.20.2019 11:36:01.712 AM] Unity.TextMeshPro.Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 17712
+ (0,0): [02.20.2019 11:36:02.361 AM] Assembly-CSharp.dll: no prior compilation found in cache. Caller PID: 17712
+ (0,0): [02.20.2019 11:36:02.373 AM] Assembly-CSharp.dll compiling...
+ (0,0): [02.20.2019 11:36:02.524 AM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
+ (0,0): [02.20.2019 11:36:02.588 AM] Assembly-CSharp.dll compilation finished in 215ms  source files re-parsed: 16 metadata reloaded: 4
+ (0,0): [02.20.2019 11:36:02.601 AM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 17712
+ (0,0): [02.20.2019 11:37:54.738 AM] Unity.Analytics.DataPrivacy.dll compiling...
+ (0,0): [02.20.2019 11:37:54.785 AM] Unity.Analytics.DataPrivacy.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.Analytics.DataPrivacy.dll
+ (0,0): [02.20.2019 11:37:54.785 AM] Unity.TextMeshPro.dll compiling...
+ (0,0): [02.20.2019 11:37:54.813 AM] Unity.Analytics.DataPrivacy.dll compilation finished in 75ms  source files re-parsed: 0 metadata reloaded: 0
+ (0,0): [02.20.2019 11:37:54.825 AM] Unity.Analytics.DataPrivacy.dll: compilation was cached, 0 file(s) were found to have changed. Caller PID: 17712
+ (0,0): [02.20.2019 11:37:54.858 AM] Unity.Analytics.DataPrivacy.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 17712
+ (0,0): [02.20.2019 11:37:54.928 AM] Unity.CollabProxy.Editor.dll compiling...
+ (0,0): [02.20.2019 11:37:55.053 AM] Unity.PackageManagerUI.Editor.dll compiling...
+ (0,0): [02.20.2019 11:37:55.066 AM] Unity.CollabProxy.Editor.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.CollabProxy.Editor.dll
+ (0,0): [02.20.2019 11:37:55.162 AM] Unity.PackageManagerUI.Editor.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.PackageManagerUI.Editor.dll
+ (0,0): [02.20.2019 11:37:55.198 AM] Unity.TextMeshPro.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.TextMeshPro.dll
+ (0,0): [02.20.2019 11:37:55.213 AM] Unity.CollabProxy.Editor.dll compilation finished in 285ms  source files re-parsed: 0 metadata reloaded: 0
+ (0,0): [02.20.2019 11:37:55.225 AM] Unity.CollabProxy.Editor.dll: compilation was cached, 0 file(s) were found to have changed. Caller PID: 17712
+ (0,0): [02.20.2019 11:37:55.236 AM] Unity.CollabProxy.Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 17712
+ (0,0): [02.20.2019 11:37:55.253 AM] Unity.PackageManagerUI.Editor.dll compilation finished in 200ms  source files re-parsed: 0 metadata reloaded: 0
+ (0,0): [02.20.2019 11:37:55.265 AM] Unity.PackageManagerUI.Editor.dll: compilation was cached, 0 file(s) were found to have changed. Caller PID: 17712
+ (0,0): [02.20.2019 11:37:55.276 AM] Unity.PackageManagerUI.Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 17712
+ (0,0): [02.20.2019 11:37:55.286 AM] Unity.TextMeshPro.dll compilation finished in 500ms  source files re-parsed: 0 metadata reloaded: 0
+ (0,0): [02.20.2019 11:37:55.297 AM] Unity.TextMeshPro.dll: compilation was cached, 0 file(s) were found to have changed. Caller PID: 17712
+ (0,0): [02.20.2019 11:37:55.308 AM] Unity.TextMeshPro.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 17712
+ (0,0): [02.20.2019 11:37:56.014 AM] Unity.TextMeshPro.Editor.dll compiling...
+ (0,0): [02.20.2019 11:37:56.154 AM] Unity.TextMeshPro.Editor.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Unity.TextMeshPro.Editor.dll
+ (0,0): [02.20.2019 11:37:56.275 AM] Unity.TextMeshPro.Editor.dll compilation finished in 261ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [02.20.2019 11:37:56.286 AM] Unity.TextMeshPro.Editor.dll: compilation was cached, 0 file(s) were found to have changed. Caller PID: 17712
+ (0,0): [02.20.2019 11:37:56.298 AM] Unity.TextMeshPro.Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 17712
+ (0,0): [02.20.2019 11:37:56.734 AM] Assembly-CSharp.dll compiling...
+ (0,0): [02.20.2019 11:37:56.820 AM] Assembly-CSharp.dll: emitting IL to : D:\Documents\GitHub\SpaceInvader\SpaceInvader\AsteroidShooter\Temp\Assembly-CSharp.dll
+ (0,0): [02.20.2019 11:37:56.885 AM] Assembly-CSharp.dll compilation finished in 150ms  source files re-parsed: 0 metadata reloaded: 4
+ (0,0): [02.20.2019 11:37:56.897 AM] Assembly-CSharp.dll: compilation was cached, 0 file(s) were found to have changed. Caller PID: 17712
+ (0,0): [02.20.2019 11:37:56.908 AM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 17712
+ (0,0): [02.20.2019 11:39:12.809 AM] watchdog triggered an exit
